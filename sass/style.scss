@@ -4,5 +4,17 @@ body {
         .top {
             color: red;
         }
+        .box {
+            width: 100vw;
+            height: 100vh;
+            background: #fff url(../image/background_90.png) no-repeat center center scroll;
+            background-size: cover;
+        }
+        .profile_image {
+            width: auto;
+            max-width: 100%;
+            max-height: 90vh;
+            margin: 2rem auto; 
+        }
     }
 }
