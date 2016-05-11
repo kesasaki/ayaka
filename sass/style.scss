@@ -1,20 +1,74 @@
 @import "compass";
+$contents_width: 400px;
 body {
     .main {
+        font-family: serif;
+        color: #4C4C4C;
         .top {
-            color: red;
+            padding-top: 240px;
+            .contentField {
+                text-align: center;
+                width: $contents_width;
+                margin: auto;
+                p {
+                    font-size: 92px;
+                    line-height: 0.3em;
+                    text-align: center;
+                    margin-top: 0px;
+                    padding-top: 0px;
+                }
+                .menu {
+                    padding: 0;
+                    li{
+                        list-style-type: none;
+                        float: left;
+                        width: 20%;
+                        font-size: 24px;
+                        a {
+                            text-decoration: none;
+                        }
+                        &:hover {
+                            background: #272435;
+                        }
+                    }
+                }
+                .fixed {
+                    position: fixed;
+                    top: 0px;
+                    z-index: 9999;
+                    width: $contents_width;
+                }
+            }
+        }
+        .news {
+            @extend .top;
+            padding-top: 50px;
+            .contentField {
+                p {
+                    font-size: 48px;
+                }
+            }
+        }
+        .profile {
+            @extend .news;
+            img {
+                width: auto;
+                max-width: 100%;
+                max-height: 90vh;
+                margin: 2rem auto; 
+            }
+        }
+        .works {
+            @extend .news;
+        }
+        .contact {
+            @extend .news;
         }
         .box {
             width: 100vw;
             height: 100vh;
-            background: #fff url(../image/background_90.png) no-repeat center center scroll;
+            background: #fff url(../image/bg_90_ww.jpg) no-repeat center center scroll;
             background-size: cover;
-        }
-        .profile_image {
-            width: auto;
-            max-width: 100%;
-            max-height: 90vh;
-            margin: 2rem auto; 
         }
     }
 }

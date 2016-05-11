@@ -1,22 +1,71 @@
-/* line 3, ../sass/style.scss */
+/* line 4, ../sass/style.scss */
 body .main {
-  background-color: rgba(255, 255, 255, 0.5);
+  font-family: serif;
+  color: #4C4C4C;
 }
-/* line 5, ../sass/style.scss */
-body .main .top {
-  color: red;
+/* line 7, ../sass/style.scss */
+body .main .top, body .main .news, body .main .profile, body .main .works, body .main .contact {
+  padding-top: 240px;
 }
-/* line 8, ../sass/style.scss */
-body .main .box {
-  width: 100vw;
-  height: 100vh;
-  background: #fff url(../image/background_90.png) no-repeat center center scroll;
-  background-size: cover;
+/* line 9, ../sass/style.scss */
+body .main .top .contentField, body .main .news .contentField, body .main .profile .contentField, body .main .works .contentField, body .main .contact .contentField {
+  text-align: center;
+  width: 400px;
+  margin: auto;
 }
-/* line 14, ../sass/style.scss */
-body .main .profile_image {
+/* line 13, ../sass/style.scss */
+body .main .top .contentField p, body .main .news .contentField p, body .main .profile .contentField p, body .main .works .contentField p, body .main .contact .contentField p {
+  font-size: 92px;
+  line-height: 0.3em;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+/* line 20, ../sass/style.scss */
+body .main .top .contentField .menu, body .main .news .contentField .menu, body .main .profile .contentField .menu, body .main .works .contentField .menu, body .main .contact .contentField .menu {
+  padding: 0;
+}
+/* line 22, ../sass/style.scss */
+body .main .top .contentField .menu li, body .main .news .contentField .menu li, body .main .profile .contentField .menu li, body .main .works .contentField .menu li, body .main .contact .contentField .menu li {
+  list-style-type: none;
+  float: left;
+  width: 20%;
+  font-size: 24px;
+}
+/* line 27, ../sass/style.scss */
+body .main .top .contentField .menu li a, body .main .news .contentField .menu li a, body .main .profile .contentField .menu li a, body .main .works .contentField .menu li a, body .main .contact .contentField .menu li a {
+  text-decoration: none;
+}
+/* line 30, ../sass/style.scss */
+body .main .top .contentField .menu li:hover, body .main .news .contentField .menu li:hover, body .main .profile .contentField .menu li:hover, body .main .works .contentField .menu li:hover, body .main .contact .contentField .menu li:hover {
+  background: #272435;
+}
+/* line 35, ../sass/style.scss */
+body .main .top .contentField .fixed, body .main .news .contentField .fixed, body .main .profile .contentField .fixed, body .main .works .contentField .fixed, body .main .contact .contentField .fixed {
+  position: fixed;
+  top: 0px;
+  z-index: 9999;
+  width: 400px;
+}
+/* line 43, ../sass/style.scss */
+body .main .news, body .main .profile, body .main .works, body .main .contact {
+  padding-top: 50px;
+}
+/* line 47, ../sass/style.scss */
+body .main .news .contentField p, body .main .profile .contentField p, body .main .works .contentField p, body .main .contact .contentField p {
+  font-size: 48px;
+}
+/* line 54, ../sass/style.scss */
+body .main .profile img {
   width: auto;
   max-width: 100%;
   max-height: 90vh;
   margin: 2rem auto;
+}
+/* line 67, ../sass/style.scss */
+body .main .box {
+  width: 100vw;
+  height: 100vh;
+  background: #fff url(../image/bg_90_ww.jpg) no-repeat center center scroll;
+  background-size: cover;
 }

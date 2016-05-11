@@ -3,24 +3,46 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./js/menu.js"></script>
   </head>
   <body>
     <div class="main">
       <div class="box top">
-        <h1>Ayaka Samano</h1>
+        <div class="contentField">
+          <p>Ayaka</p>
+          <p>Samano</p>
+          <div id="menuWrap">
+          <ul class="menu">
+            <li><a href="#">Top</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          </div>
+        </div>
       </div>
       <div class="box news">
-        <h1>What's New</h1>
+        <div class="contentField">
+          <p>What's New</p>
+        </div>
       </div>
       <div class="box profile">
-        <h1>Profile</h1>
-        <img src="image/profile.png" class="profile_image">
+        <div class="contentField">
+          <p>Profile</p>
+          <img src="image/profile.png">
+        </div>
       </div>
       <div class="box works">
-        <h1>Works</h1>
+        <div class="contentField">
+          <p>Works</p>
+        </div>
       </div>
-      <div class="box contacts">
-        <h1>Contat</h1>
+      <div class="box contact">
+        <div class="contentField">
+          <p>Contact</p>
+        </div>
       </div>
     </div>
   </body>
