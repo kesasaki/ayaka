@@ -118,7 +118,20 @@ body .main .profile .description p {
   font-size: 14px;
   line-height: 1.6em;
 }
-/* line 126, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
+body .main .works .contentField dl dt {
+  width: 80px;
+  font-weight: bold;
+}
+/* line 129, ../sass/style.scss */
+body .main .works .contentField dl dd {
+  margin-left: 80px;
+}
+/* line 131, ../sass/style.scss */
+body .main .works .contentField dl dd.category {
+  font-weight: normal;
+}
+/* line 141, ../sass/style.scss */
 body .main .box {
   width: 100vw;
   height: 100vh;

@@ -119,6 +119,21 @@ body {
         }
         .works {
             @extend .news;
+            .contentField {
+                // 表
+                dl {
+                    dt {
+                        width: 80px;
+                        font-weight: bold;
+                    }
+                    dd {
+                        margin-left: 80px;
+                        &.category {
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
         }
         .contact {
             @extend .news;
