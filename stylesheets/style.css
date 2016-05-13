@@ -15,7 +15,7 @@ body .main .top .contentField, body .main .news .contentField, body .main .profi
 }
 /* line 18, ../sass/style.scss */
 body .main .top .contentField p, body .main .news .contentField p, body .main .profile .contentField p, body .main .works .contentField p, body .main .contact .contentField p {
-  font-family: serif;
+  font-family: -webkit-pictograph;
   font-size: 92px;
   line-height: 0.3em;
   text-align: center;
@@ -24,7 +24,7 @@ body .main .top .contentField p, body .main .news .contentField p, body .main .p
 }
 /* line 28, ../sass/style.scss */
 body .main .top .contentField .menu, body .main .news .contentField .menu, body .main .profile .contentField .menu, body .main .works .contentField .menu, body .main .contact .contentField .menu {
-  font-family: serif;
+  font-family: -webkit-pictograph;
   padding: 0;
 }
 /* line 31, ../sass/style.scss */
@@ -40,32 +40,41 @@ body .main .top .contentField .menu li a, body .main .news .contentField .menu l
 }
 /* line 39, ../sass/style.scss */
 body .main .top .contentField .menu li:hover, body .main .news .contentField .menu li:hover, body .main .profile .contentField .menu li:hover, body .main .works .contentField .menu li:hover, body .main .contact .contentField .menu li:hover {
-  background: #272435;
+  color: #FFFFFF;
 }
 /* line 44, ../sass/style.scss */
 body .main .top .contentField .fixed, body .main .news .contentField .fixed, body .main .profile .contentField .fixed, body .main .works .contentField .fixed, body .main .contact .contentField .fixed {
   position: fixed;
+  left: 8px;
   top: 0px;
   z-index: 9999;
+  width: 100%;
+  background: #FFFFFF;
+  opacity: 0.6;
+  border-bottom: 1px solid #BBB;
+}
+/* line 53, ../sass/style.scss */
+body .main .top .contentField .fixed ul, body .main .news .contentField .fixed ul, body .main .profile .contentField .fixed ul, body .main .works .contentField .fixed ul, body .main .contact .contentField .fixed ul {
+  margin: auto;
   width: 400px;
 }
-/* line 52, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 body .main .news, body .main .profile, body .main .works, body .main .contact {
-  padding-top: 50px;
+  padding-top: 100px;
 }
-/* line 56, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 body .main .news .contentField p, body .main .profile .contentField p, body .main .works .contentField p, body .main .contact .contentField p {
   font-size: 48px;
-  font-family: serif;
+  font-family: -webkit-pictograph;
 }
-/* line 62, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 body .main .news .contentField dl, body .main .profile .contentField dl, body .main .works .contentField dl, body .main .contact .contentField dl {
   text-align: left;
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #BBBBBB;
 }
-/* line 67, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 body .main .news .contentField dl dt, body .main .profile .contentField dl dt, body .main .works .contentField dl dt, body .main .contact .contentField dl dt {
   clear: left;
   float: left;
@@ -74,41 +83,42 @@ body .main .news .contentField dl dt, body .main .profile .contentField dl dt, b
   padding-top: 10px;
   margin-top: 10px;
 }
-/* line 74, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 body .main .news .contentField dl dt.first, body .main .profile .contentField dl dt.first, body .main .works .contentField dl dt.first, body .main .contact .contentField dl dt.first {
   margin-top: 0;
 }
-/* line 78, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 body .main .news .contentField dl dd, body .main .profile .contentField dl dd, body .main .works .contentField dl dd, body .main .contact .contentField dl dd {
   margin-left: 160px;
 }
-/* line 80, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 body .main .news .contentField dl dd.category, body .main .profile .contentField dl dd.category, body .main .works .contentField dl dd.category, body .main .contact .contentField dl dd.category {
   font-weight: bold;
   border-top: 1px solid #BBBBBB;
   padding-top: 10px;
   margin-top: 10px;
 }
-/* line 92, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 body .main .profile img {
   width: auto;
-  max-width: 100%;
-  max-height: 90vh;
+  max-width: 60%;
+  max-height: 60%;
   margin: 0px auto 30px auto;
+  border-radius: 10px;
 }
-/* line 98, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 body .main .profile .activityName {
   padding-bottom: 30px;
   font-size: 24px;
   text-align: left;
 }
-/* line 104, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 body .main .profile .description p {
   text-align: left;
   font-size: 14px;
   line-height: 1.6em;
 }
-/* line 117, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 body .main .box {
   width: 100vw;
   height: 100vh;

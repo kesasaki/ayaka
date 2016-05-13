@@ -2,6 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="./js/menu.js"></script>
@@ -13,17 +14,17 @@
           <p>Ayaka</p>
           <p>Samano</p>
           <div id="menuWrap">
-          <ul class="menu">
-            <li><a href="#">Top</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+            <ul class="menu">
+              <li><a href="#">Top</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#profile">Profile</a></li>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="box news">
+      <div class="box news" id="news">
         <div class="contentField">
           <p>What's New</p>
           <dl>
@@ -45,10 +46,10 @@
           </dl>
         </div>
       </div>
-      <div class="box profile">
+      <div class="box profile" id="profile">
         <div class="contentField">
           <p>Profile</p>
-          <img src="image/profile.png">
+          <img src="image/profile2.jpg">
           <div class="activityName">佐間野絢香 Ayaka Samano</div>
           <div class="description">
             <p>1979年 浜松市に生まれる。</p>
@@ -59,12 +60,12 @@
           </div>
         </div>
       </div>
-      <div class="box works">
+      <div class="box works" id="works">
         <div class="contentField">
           <p>Works</p>
         </div>
       </div>
-      <div class="box contact">
+      <div class="box contact" id="contact">
         <div class="contentField">
           <p>Contact</p>
         </div>

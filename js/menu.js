@@ -2,10 +2,10 @@ $(function(){
     var box    = $("#menuWrap");
     var boxTop = box.offset().top;
     $(window).scroll(function () {
-        if($(window).scrollTop() >= boxTop - 14) {
-            box.addClass("fixed");
+        if($(window).scrollTop() >= boxTop) {
+            box.addClass("fixed", 1000);
         } else {
-            box.removeClass("fixed");
+            box.removeClass("fixed", 1000);
         }
     });
 });
