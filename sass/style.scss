@@ -4,6 +4,8 @@ $border_color: #BBBBBB;
 $title_font_family :  -webkit-pictograph;
 $default_font_family :  inherit;
 body {
+    margin: 0px;
+    border: 0px;
     .main {
         font-family: $default_font_family;
         color: #4C4C4C;
