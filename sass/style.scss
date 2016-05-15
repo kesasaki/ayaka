@@ -6,6 +6,14 @@ $default_font_family :  inherit;
 body {
     margin: 0px;
     border: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../image/bg_cat.png);
+    background-position-x: left;
+    background-position-y: top;
+    background-repeat-x: no-repeat;
+    background-repeat-y: inherit;
+    background-size: cover;
     .main {
         font-family: $default_font_family;
         color: #4C4C4C;
@@ -143,8 +151,6 @@ body {
         .box {
             width: 100vw;
             height: 100vh;
-            background: #fff url(../image/bg_90_ww.jpg) no-repeat center center scroll;
-            background-size: cover;
         }
     }
 }
