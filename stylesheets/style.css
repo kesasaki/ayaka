@@ -13,7 +13,7 @@ body {
 }
 /* line 19, ../sass/style.scss */
 body .main {
-  background-color: rgba(255, 255, 255, 0.55);
+  background-color: rgba(255, 255, 255, 0.9);
   font-family: inherit;
   color: #4C4C4C;
 }
