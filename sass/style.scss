@@ -1,8 +1,10 @@
 @import "compass";
+@import "compass/typography/links/link-colors";
 $contents_width: 400px;
 $border_color: #BBBBBB;
 $title_font_family :  -webkit-pictograph;
 $default_font_family :  inherit;
+$font_color: #000000;
 body {
     margin: 0px;
     border: 0px;
@@ -15,61 +17,81 @@ body {
     background-repeat-y: inherit;
     background-size: cover;
     .main {
+        //.content {
+        //    width: 900px;
+        //    margin: auto;
+        //}
         background-color: rgba( 255, 255, 255, 0.55 );
         font-family: $default_font_family;
         color: #4C4C4C;
         .top {
-           text-align: center;
-           height: 100%;
-           width: $contents_width;
-           margin: auto;
+            text-align: center;
+            height: 100%;
+            width: $contents_width;
 
-           // ページタイトル
-           p {
-               font-family: $title_font_family;
-               font-size: 92px;
-               line-height: 0.3em;
-               text-align: center;
-               margin-top: 0px;
-               padding-top: 0px;
-           }
+            // ページタイトル
+            p {
+                font-family: $title_font_family;
+                font-size: 92px;
+                line-height: 0.3em;
+                text-align: center;
+                margin-top: 0px;
+                padding-top: 0px;
+                letter-spacing: 15px;
+            }
 
-           // メニュー
-           .menu {
-               font-family: $title_font_family;
-               padding: 0;
-               li{
-                   list-style-type: none;
-                   float: left;
-                   width: 20%;
-                   font-size: 24px;
-                   a {
-                       text-decoration: none;
-                   }
-                   &:hover {
-                       color: #FFFFFF;
-                   }
-               }
-           }
-           .fixed {
-               position: fixed;
-               left: 8px;
-               top: 0px;
-               z-index: 9999;
-               width: 100%;
-               background: #FFFFFF;
-               opacity: 0.6;
-               border-bottom: 1px solid #BBB;
-               ul {
-                   margin: auto;
-                   width: $contents_width;
-               }
-           }
+            #menuWrap{
+                width: 100%;
+                .menu-max {
+                    max-width: 900px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100%;
+                    .menu {
+                        width: 90%;
+                        border-top-width: 2px;
+                        border-top-style: solid;
+                        margin-left: auto;
+                        margin-right: auto;
+                        height: 45px;
+                    }
+                }
+                // メニュー
+                ul {
+                    font-family: $title_font_family;
+                    padding: 0;
+                    li{
+                        list-style-type: none;
+                        float: left;
+                        width: 25%;
+                        font-size: 24px;
+                        a {
+                            @include link-colors($font_color);
+                            text-decoration: none;
+                        }
+                    }
+                }
+                &.fixed {
+                    position: fixed;
+                    left: 0px;
+                    top: 0px;
+                    z-index: 9999;
+                    width: 100%;
+                    background: #FFFFFF;
+                    opacity: 0.6;
+                    .menu-max {
+                        border-bottom-width: 2px;
+                        border-bottom-style: solid;
+                        .menu {
+                            border-top: none;
+                        }
+                    }
+                }
+            }
         }
         .news {
-            @extend .top;
-            padding-top: 100px;
             .contentField {
+                text-align: center;
                 p {
                     font-size: 48px;
                     font-family: $title_font_family;
@@ -108,8 +130,7 @@ body {
             @extend .news;
             img {
                 width: auto;
-                max-width: 60%;
-                max-height: 60%;
+                max-width: 300px;
                 margin: 0px auto 30px auto;
                 border-radius: 10px; 
             }
@@ -150,6 +171,8 @@ body {
         .box {
             width: 100vw;
             height: 100vh;
+            max-width: 900px;
+            margin: auto;
             display: flex;
             align-items: center;
             justify-content: center;
