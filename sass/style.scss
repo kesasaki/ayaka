@@ -21,6 +21,11 @@ body {
         //    width: 900px;
         //    margin: auto;
         //}
+        .contentField {
+            width: 90%;
+            margin-right: auto;
+            margin-left: auto;
+        }
         background-color: rgba( 255, 255, 255, 0.55 );
         font-family: $default_font_family;
         color: #4C4C4C;
@@ -177,6 +182,10 @@ body {
             align-items: center;
             justify-content: center;
             flex-direction: column;
+        }
+        .without-box {
+            max-width: 900px;
+            margin: auto;
         }
     }
 }
