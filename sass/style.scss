@@ -204,6 +204,24 @@ body {
         }
         .contact {
             @extend .news;
+            .contentField {
+                ul {
+                    margin-top: 20px;
+                    width: 200px;
+                    margin: auto;
+                    li {
+                        text-align: left;
+                    }
+                }
+                button {
+                    font-size: 1.4em;
+                    font-weight: bold;
+                    padding: 10px 30px;
+                    background-color: #ffffff;
+                    border-top: 1px solid $border_color;
+                    border-radius: 10px;
+                }
+            }
         }
         .box {
             width: 100vw;
