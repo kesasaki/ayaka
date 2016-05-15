@@ -15,6 +15,7 @@ body {
     background-repeat-y: inherit;
     background-size: cover;
     .main {
+        background-color: rgba( 255, 255, 255, 0.55 );
         font-family: $default_font_family;
         color: #4C4C4C;
         .top {
