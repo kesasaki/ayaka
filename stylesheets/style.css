@@ -1,20 +1,31 @@
-/* line 7, ../sass/style.scss */
+/* line 6, ../sass/style.scss */
+body {
+  margin: 0px;
+  border: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../image/bg_cat.png);
+  background-position-x: left;
+  background-position-y: top;
+  background-repeat-x: no-repeat;
+  background-repeat-y: inherit;
+  background-size: cover;
+}
+/* line 17, ../sass/style.scss */
 body .main {
+  background-color: rgba(255, 255, 255, 0.55);
   font-family: inherit;
   color: #4C4C4C;
 }
-/* line 10, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 body .main .top, body .main .news, body .main .profile, body .main .works, body .main .contact {
-  padding-top: 240px;
-}
-/* line 12, ../sass/style.scss */
-body .main .top .contentField, body .main .news .contentField, body .main .profile .contentField, body .main .works .contentField, body .main .contact .contentField {
   text-align: center;
+  height: 100%;
   width: 400px;
   margin: auto;
 }
-/* line 18, ../sass/style.scss */
-body .main .top .contentField p, body .main .news .contentField p, body .main .profile .contentField p, body .main .works .contentField p, body .main .contact .contentField p {
+/* line 28, ../sass/style.scss */
+body .main .top p, body .main .news p, body .main .profile p, body .main .works p, body .main .contact p {
   font-family: -webkit-pictograph;
   font-size: 92px;
   line-height: 0.3em;
@@ -22,28 +33,28 @@ body .main .top .contentField p, body .main .news .contentField p, body .main .p
   margin-top: 0px;
   padding-top: 0px;
 }
-/* line 28, ../sass/style.scss */
-body .main .top .contentField .menu, body .main .news .contentField .menu, body .main .profile .contentField .menu, body .main .works .contentField .menu, body .main .contact .contentField .menu {
+/* line 38, ../sass/style.scss */
+body .main .top .menu, body .main .news .menu, body .main .profile .menu, body .main .works .menu, body .main .contact .menu {
   font-family: -webkit-pictograph;
   padding: 0;
 }
-/* line 31, ../sass/style.scss */
-body .main .top .contentField .menu li, body .main .news .contentField .menu li, body .main .profile .contentField .menu li, body .main .works .contentField .menu li, body .main .contact .contentField .menu li {
+/* line 41, ../sass/style.scss */
+body .main .top .menu li, body .main .news .menu li, body .main .profile .menu li, body .main .works .menu li, body .main .contact .menu li {
   list-style-type: none;
   float: left;
   width: 20%;
   font-size: 24px;
 }
-/* line 36, ../sass/style.scss */
-body .main .top .contentField .menu li a, body .main .news .contentField .menu li a, body .main .profile .contentField .menu li a, body .main .works .contentField .menu li a, body .main .contact .contentField .menu li a {
+/* line 46, ../sass/style.scss */
+body .main .top .menu li a, body .main .news .menu li a, body .main .profile .menu li a, body .main .works .menu li a, body .main .contact .menu li a {
   text-decoration: none;
 }
-/* line 39, ../sass/style.scss */
-body .main .top .contentField .menu li:hover, body .main .news .contentField .menu li:hover, body .main .profile .contentField .menu li:hover, body .main .works .contentField .menu li:hover, body .main .contact .contentField .menu li:hover {
+/* line 49, ../sass/style.scss */
+body .main .top .menu li:hover, body .main .news .menu li:hover, body .main .profile .menu li:hover, body .main .works .menu li:hover, body .main .contact .menu li:hover {
   color: #FFFFFF;
 }
-/* line 44, ../sass/style.scss */
-body .main .top .contentField .fixed, body .main .news .contentField .fixed, body .main .profile .contentField .fixed, body .main .works .contentField .fixed, body .main .contact .contentField .fixed {
+/* line 54, ../sass/style.scss */
+body .main .top .fixed, body .main .news .fixed, body .main .profile .fixed, body .main .works .fixed, body .main .contact .fixed {
   position: fixed;
   left: 8px;
   top: 0px;
@@ -53,28 +64,28 @@ body .main .top .contentField .fixed, body .main .news .contentField .fixed, bod
   opacity: 0.6;
   border-bottom: 1px solid #BBB;
 }
-/* line 53, ../sass/style.scss */
-body .main .top .contentField .fixed ul, body .main .news .contentField .fixed ul, body .main .profile .contentField .fixed ul, body .main .works .contentField .fixed ul, body .main .contact .contentField .fixed ul {
+/* line 63, ../sass/style.scss */
+body .main .top .fixed ul, body .main .news .fixed ul, body .main .profile .fixed ul, body .main .works .fixed ul, body .main .contact .fixed ul {
   margin: auto;
   width: 400px;
 }
-/* line 60, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 body .main .news, body .main .profile, body .main .works, body .main .contact {
   padding-top: 100px;
 }
-/* line 64, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 body .main .news .contentField p, body .main .profile .contentField p, body .main .works .contentField p, body .main .contact .contentField p {
   font-size: 48px;
   font-family: -webkit-pictograph;
 }
-/* line 70, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 body .main .news .contentField dl, body .main .profile .contentField dl, body .main .works .contentField dl, body .main .contact .contentField dl {
   text-align: left;
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #BBBBBB;
 }
-/* line 75, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 body .main .news .contentField dl dt, body .main .profile .contentField dl dt, body .main .works .contentField dl dt, body .main .contact .contentField dl dt {
   clear: left;
   float: left;
@@ -83,22 +94,22 @@ body .main .news .contentField dl dt, body .main .profile .contentField dl dt, b
   padding-top: 10px;
   margin-top: 10px;
 }
-/* line 82, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 body .main .news .contentField dl dt.first, body .main .profile .contentField dl dt.first, body .main .works .contentField dl dt.first, body .main .contact .contentField dl dt.first {
   margin-top: 0;
 }
-/* line 86, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 body .main .news .contentField dl dd, body .main .profile .contentField dl dd, body .main .works .contentField dl dd, body .main .contact .contentField dl dd {
   margin-left: 160px;
 }
-/* line 88, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 body .main .news .contentField dl dd.category, body .main .profile .contentField dl dd.category, body .main .works .contentField dl dd.category, body .main .contact .contentField dl dd.category {
   font-weight: bold;
   border-top: 1px solid #BBBBBB;
   padding-top: 10px;
   margin-top: 10px;
 }
-/* line 100, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 body .main .profile img {
   width: auto;
   max-width: 60%;
@@ -106,35 +117,37 @@ body .main .profile img {
   margin: 0px auto 30px auto;
   border-radius: 10px;
 }
-/* line 107, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 body .main .profile .activityName {
   padding-bottom: 30px;
   font-size: 24px;
   text-align: left;
 }
-/* line 113, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 body .main .profile .description p {
   text-align: left;
   font-size: 14px;
   line-height: 1.6em;
 }
-/* line 125, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 body .main .works .contentField dl dt {
   width: 80px;
   font-weight: bold;
 }
-/* line 129, ../sass/style.scss */
+/* line 138, ../sass/style.scss */
 body .main .works .contentField dl dd {
   margin-left: 80px;
 }
-/* line 131, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 body .main .works .contentField dl dd.category {
   font-weight: normal;
 }
-/* line 141, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 body .main .box {
   width: 100vw;
   height: 100vh;
-  background: #fff url(../image/bg_90_ww.jpg) no-repeat center center scroll;
-  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
