@@ -179,6 +179,25 @@ body .main .works .contentField dl dd img {
   height: 100px;
 }
 /* line 186, ../sass/style.scss */
+body .main .contact .contentField ul {
+  margin-top: 20px;
+  width: 200px;
+  margin: auto;
+}
+/* line 190, ../sass/style.scss */
+body .main .contact .contentField ul li {
+  text-align: left;
+}
+/* line 194, ../sass/style.scss */
+body .main .contact .contentField button {
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 10px 30px;
+  background-color: #ffffff;
+  border-top: 1px solid #BBBBBB;
+  border-radius: 10px;
+}
+/* line 204, ../sass/style.scss */
 body .main .box {
   width: 100vw;
   height: 100vh;
@@ -189,7 +208,7 @@ body .main .box {
   justify-content: center;
   flex-direction: column;
 }
-/* line 196, ../sass/style.scss */
+/* line 214, ../sass/style.scss */
 body .main .without-box {
   max-width: 900px;
   margin: auto;
