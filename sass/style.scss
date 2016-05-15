@@ -160,11 +160,21 @@ body {
                     dt {
                         width: 80px;
                         font-weight: bold;
+                        clear: both;
                     }
                     dd {
-                        margin-left: 80px;
-                        &.category {
-                            font-weight: normal;
+                        float: left;
+                        margin-left: 0px;
+                        margin-top: 10px;
+                        padding-top: 10px;
+                        width: 180px;
+                        border-top: 1px solid $border_color;
+                        &.desription {
+                            width: 180px;
+                        }
+                        img {
+                            width:  100px;
+                            height: 100px;
                         }
                     }
                 }

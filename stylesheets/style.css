@@ -158,16 +158,27 @@ body .main .profile .description p {
 body .main .works .contentField dl dt {
   width: 80px;
   font-weight: bold;
+  clear: both;
 }
-/* line 164, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 body .main .works .contentField dl dd {
-  margin-left: 80px;
+  float: left;
+  margin-left: 0px;
+  margin-top: 10px;
+  padding-top: 10px;
+  width: 180px;
+  border-top: 1px solid #BBBBBB;
 }
-/* line 166, ../sass/style.scss */
-body .main .works .contentField dl dd.category {
-  font-weight: normal;
+/* line 172, ../sass/style.scss */
+body .main .works .contentField dl dd.desription {
+  width: 180px;
 }
-/* line 176, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
+body .main .works .contentField dl dd img {
+  width: 100px;
+  height: 100px;
+}
+/* line 186, ../sass/style.scss */
 body .main .box {
   width: 100vw;
   height: 100vh;
@@ -178,7 +189,7 @@ body .main .box {
   justify-content: center;
   flex-direction: column;
 }
-/* line 186, ../sass/style.scss */
+/* line 196, ../sass/style.scss */
 body .main .without-box {
   max-width: 900px;
   margin: auto;
