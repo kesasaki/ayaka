@@ -19,53 +19,51 @@ body {
         font-family: $default_font_family;
         color: #4C4C4C;
         .top {
-            .contentField {
-                text-align: center;
-                width: $contents_width;
-                margin: auto;
+           text-align: center;
+           width: $contents_width;
+           margin: auto;
 
-                // ページタイトル
-                p {
-                    font-family: $title_font_family;
-                    font-size: 92px;
-                    line-height: 0.3em;
-                    text-align: center;
-                    margin-top: 0px;
-                    padding-top: 0px;
-                }
+           // ページタイトル
+           p {
+               font-family: $title_font_family;
+               font-size: 92px;
+               line-height: 0.3em;
+               text-align: center;
+               margin-top: 0px;
+               padding-top: 0px;
+           }
 
-                // メニュー
-                .menu {
-                    font-family: $title_font_family;
-                    padding: 0;
-                    li{
-                        list-style-type: none;
-                        float: left;
-                        width: 20%;
-                        font-size: 24px;
-                        a {
-                            text-decoration: none;
-                        }
-                        &:hover {
-                            color: #FFFFFF;
-                        }
-                    }
-                }
-                .fixed {
-                    position: fixed;
-                    left: 8px;
-                    top: 0px;
-                    z-index: 9999;
-                    width: 100%;
-                    background: #FFFFFF;
-                    opacity: 0.6;
-                    border-bottom: 1px solid #BBB;
-                    ul {
-                        margin: auto;
-                        width: $contents_width;
-                    }
-                }
-            }
+           // メニュー
+           .menu {
+               font-family: $title_font_family;
+               padding: 0;
+               li{
+                   list-style-type: none;
+                   float: left;
+                   width: 20%;
+                   font-size: 24px;
+                   a {
+                       text-decoration: none;
+                   }
+                   &:hover {
+                       color: #FFFFFF;
+                   }
+               }
+           }
+           .fixed {
+               position: fixed;
+               left: 8px;
+               top: 0px;
+               z-index: 9999;
+               width: 100%;
+               background: #FFFFFF;
+               opacity: 0.6;
+               border-bottom: 1px solid #BBB;
+               ul {
+                   margin: auto;
+                   width: $contents_width;
+               }
+           }
         }
         .news {
             @extend .top;
