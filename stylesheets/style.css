@@ -245,4 +245,5 @@ body .main .box {
 body .main .without-box {
   max-width: 900px;
   margin: auto;
+  padding-top: 48px;
 }
