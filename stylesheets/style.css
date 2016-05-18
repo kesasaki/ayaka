@@ -31,7 +31,7 @@ body .main .top {
 }
 /* line 38, ../sass/style.scss */
 body .main .top p {
-  font-family: -webkit-pictograph;
+  font-family: serif;
   font-size: 92px;
   line-height: 0.3em;
   text-align: center;
@@ -61,7 +61,7 @@ body .main .top #menuWrap .menu-max .menu {
 }
 /* line 65, ../sass/style.scss */
 body .main .top #menuWrap ul {
-  font-family: -webkit-pictograph;
+  font-family: serif;
   padding: 0;
 }
 /* line 68, ../sass/style.scss */
@@ -102,7 +102,7 @@ body .main .news .contentField, body .main .profile .contentField, body .main .w
 /* line 100, ../sass/style.scss */
 body .main .news .contentField p, body .main .profile .contentField p, body .main .works .contentField p, body .main .contact .contentField p {
   font-size: 48px;
-  font-family: -webkit-pictograph;
+  font-family: serif;
 }
 /* line 106, ../sass/style.scss */
 body .main .news .contentField dl, body .main .profile .contentField dl, body .main .works .contentField dl, body .main .contact .contentField dl {
@@ -188,6 +188,7 @@ body .main .works .contentField dl dt {
 }
 /* line 186, ../sass/style.scss */
 body .main .works .contentField dl dd {
+  display: inline-box;
   text-align: left;
   display: inline-block;
   margin-top: 0px;
@@ -198,28 +199,33 @@ body .main .works .contentField dl dd {
 /* line 187, ../sass/style.scss */
 body .main .works .contentField dl dd.description {
   float: left;
+  width: 270px;
 }
-/* line 196, ../sass/style.scss */
+/* line 191, ../sass/style.scss */
+body .main .works .contentField dl dd.contents {
+  margin-left: 80px;
+}
+/* line 201, ../sass/style.scss */
 body .main .works .contentField dl dd.desription {
   width: 180px;
 }
-/* line 199, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 body .main .works .contentField dl dd img {
   width: 100px;
   height: 100px;
 }
-/* line 210, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 body .main .contact .contentField ul {
   margin-top: 20px;
   padding: 20px 0 20px 40px;
   width: 200px;
   margin: auto;
 }
-/* line 215, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 body .main .contact .contentField ul li {
   text-align: left;
 }
-/* line 219, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 body .main .contact .contentField button {
   font-size: 1.4em;
   font-weight: bold;
@@ -228,11 +234,11 @@ body .main .contact .contentField button {
   border: 2px solid rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
-/* line 226, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 body .main .contact .contentField button:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
-/* line 232, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 body .main .box {
   width: 100vw;
   height: 100vh;
@@ -243,7 +249,7 @@ body .main .box {
   justify-content: center;
   flex-direction: column;
 }
-/* line 242, ../sass/style.scss */
+/* line 247, ../sass/style.scss */
 body .main .without-box {
   max-width: 900px;
   margin: auto;

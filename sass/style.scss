@@ -2,7 +2,7 @@
 @import "compass/typography/links/link-colors";
 $contents_width: 400px;
 $border_color: #BBBBBB;
-$title_font_family :  -webkit-pictograph;
+$title_font_family :  serif;
 $default_font_family :  inherit;
 $font_color: #000000;
 body {
@@ -174,7 +174,7 @@ body {
                     padding-top: 0px;
                     text-align: right;
                     dt {
-                        text-align: left;
+                        text-align: left; // <-> center
                         display: inline-block;
                         margin-top: 0px;
                         padding-top: 0px;
@@ -186,7 +186,12 @@ body {
                     dd {
                         &.description {
                             float: left;
+                            width: 270px;
                         }
+                        &.contents {
+                            margin-left: 80px;
+                        }
+                        display: inline-box;
                         text-align: left;
                         display: inline-block;
                         margin-top: 0px;
