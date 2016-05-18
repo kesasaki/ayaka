@@ -33,6 +33,12 @@ body {
             text-align: center;
             height: 100%;
             width: $contents_width;
+            background-image: url(../image/sss1.jpg);
+            background-position-x: center;
+            background-position-y: center;
+            background-repeat-x: no-repeat;
+            background-repeat-y: inherit;
+            background-size: cover;
 
             // ページタイトル
             p {
@@ -237,7 +243,7 @@ body {
         .box {
             width: 100vw;
             height: 100vh;
-            max-width: 900px;
+            //max-width: 900px;
             margin: auto;
             display: flex;
             align-items: center;
@@ -245,7 +251,7 @@ body {
             flex-direction: column;
         }
         .without-box {
-            max-width: 900px;
+            //max-width: 900px;
             margin: auto;
             padding-top: 48px;
         }
