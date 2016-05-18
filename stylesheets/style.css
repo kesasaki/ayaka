@@ -31,7 +31,7 @@ body .main .top {
 }
 /* line 38, ../sass/style.scss */
 body .main .top p {
-  font-family: serif;
+  font-family: "Sorts Mill Goudy", serif;
   font-size: 92px;
   line-height: 0.3em;
   text-align: center;
@@ -61,7 +61,7 @@ body .main .top #menuWrap .menu-max .menu {
 }
 /* line 65, ../sass/style.scss */
 body .main .top #menuWrap ul {
-  font-family: serif;
+  font-family: "Sorts Mill Goudy", serif;
   padding: 0;
 }
 /* line 68, ../sass/style.scss */
@@ -102,7 +102,7 @@ body .main .news .contentField, body .main .profile .contentField, body .main .w
 /* line 100, ../sass/style.scss */
 body .main .news .contentField p, body .main .profile .contentField p, body .main .works .contentField p, body .main .contact .contentField p {
   font-size: 48px;
-  font-family: serif;
+  font-family: "Sorts Mill Goudy", serif;
 }
 /* line 106, ../sass/style.scss */
 body .main .news .contentField dl, body .main .profile .contentField dl, body .main .works .contentField dl, body .main .contact .contentField dl {
