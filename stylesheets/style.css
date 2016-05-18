@@ -256,6 +256,7 @@ body .main .box {
 }
 /* line 253, ../sass/style.scss */
 body .main .without-box {
+  max-width: 900px;
   margin: auto;
   padding-top: 48px;
 }
