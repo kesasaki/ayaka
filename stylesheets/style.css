@@ -209,62 +209,37 @@ body .main .profile .description p {
 body .main .works ul {
   list-style: none;
   padding-left: 0px;
-  border-bottom: 1px solid #BBBBBB;
 }
-/* line 193, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 body .main .works ul li {
   width: 100%;
-  padding: 10px 0 10px 0;
   border-top: 1px solid #BBBBBB;
+  border-bottom: 1px solid #BBBBBB;
 }
-/* line 199, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 body .main .works dl {
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-  border-bottom: none;
-  margin-top: 0px;
-  padding-top: 0px;
-  text-align: right;
+  padding: 0px;
+  margin: 0px;
+  border-bottom: 0px solid #BBBBBB;
 }
-/* line 206, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 body .main .works dl dt {
-  text-align: left;
-  display: inline-block;
-  margin-top: 0px;
-  padding-top: 0px;
-  border-top: none;
-  width: 80px;
-  font-weight: bold;
-  clear: both;
+  border-top: 0px solid #BBBBBB;
+  padding-top: 0;
+  margin-top: 0;
+  float: none;
 }
-/* line 216, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 body .main .works dl dd {
-  display: inline-box;
-  text-align: left;
-  display: inline-block;
-  margin-top: 0px;
-  padding-top: 0px;
-  border-top: none;
   margin-left: 0px;
 }
-/* line 217, ../sass/style.scss */
-body .main .works dl dd.description {
-  float: left;
-  width: 270px;
-}
-/* line 221, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 body .main .works dl dd.contents {
-  margin-left: 80px;
-}
-/* line 231, ../sass/style.scss */
-body .main .works dl dd.desription {
-  width: 180px;
-}
-/* line 234, ../sass/style.scss */
-body .main .works dl dd img {
+  display: inline-block;
   width: 100px;
   height: 100px;
 }
+<<<<<<< HEAD
 /* line 241, ../sass/style.scss */
 body .main .contact {
   position: relative;
@@ -274,6 +249,22 @@ body .main .contact ul li {
   text-align: left;
 }
 /* line 249, ../sass/style.scss */
+=======
+/* line 214, ../sass/style.scss */
+body .main .works dl dd.contents img {
+  height: 100px;
+}
+/* line 218, ../sass/style.scss */
+body .main .works dl dd.description {
+  width: 200px;
+  display: inline-block;
+}
+/* line 228, ../sass/style.scss */
+body .main .contact ul li {
+  text-align: left;
+}
+/* line 232, ../sass/style.scss */
+>>>>>>> d6f1cf8a4249d1de241923a5379bf5b1b5518c2f
 body .main .contact button {
   font-size: 1.4em;
   font-weight: bold;
@@ -282,6 +273,7 @@ body .main .contact button {
   border: 2px solid rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
+<<<<<<< HEAD
 /* line 256, ../sass/style.scss */
 body .main .contact button:hover {
   background-color: rgba(0, 0, 0, 0.2);
@@ -304,6 +296,13 @@ body .main .contact .footer .copyright {
   }
 }
 /* line 273, ../sass/style.scss */
+=======
+/* line 239, ../sass/style.scss */
+body .main .contact button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 244, ../sass/style.scss */
+>>>>>>> d6f1cf8a4249d1de241923a5379bf5b1b5518c2f
 body .main .box {
   width: 100vw;
   height: 100vh;
@@ -312,7 +311,11 @@ body .main .box {
   justify-content: center;
   flex-direction: column;
 }
+<<<<<<< HEAD
 /* line 281, ../sass/style.scss */
+=======
+/* line 252, ../sass/style.scss */
+>>>>>>> d6f1cf8a4249d1de241923a5379bf5b1b5518c2f
 body .main .without-box {
   padding-top: 20px;
 }

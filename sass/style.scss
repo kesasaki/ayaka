@@ -189,51 +189,35 @@ body {
             ul {
                 list-style: none;
                 padding-left: 0px;
-                border-bottom: 1px solid $border_color;
                 li {
                     width: 100%;
-                    padding: 10px 0 10px 0;
-                    border-top: 1px solid $border_color;
+                    border-top:    1px solid $border_color;
+                    border-bottom: 1px solid $border_color;
                 }
             }
             dl {
-                padding-bottom: 0px;
-                margin-bottom: 0px;
-                border-bottom: none;
-                margin-top: 0px;
-                padding-top: 0px;
-                text-align: right;
+                padding: 0px;
+                margin: 0px;
+                border-bottom: 0px solid #BBBBBB;
                 dt {
-                    text-align: left; // <-> center
-                    display: inline-block;
-                    margin-top: 0px;
-                    padding-top: 0px;
-                    border-top: none;
-                    width: 80px;
-                    font-weight: bold;
-                    clear: both;
+                    border-top: 0px solid #BBBBBB;
+                    padding-top: 0;
+                    margin-top: 0;
+                    float: none;
                 }
                 dd {
-                    &.description {
-                        float: left;
-                        width: 270px;
-                    }
-                    &.contents {
-                        margin-left: 80px;
-                    }
-                    display: inline-box;
-                    text-align: left;
-                    display: inline-block;
-                    margin-top: 0px;
-                    padding-top: 0px;
-                    border-top: none;
                     margin-left: 0px;
-                    &.desription {
-                        width: 180px;
-                    }
-                    img {
+                    &.contents {
+                        display: inline-block;
                         width:  100px;
                         height: 100px;
+                        img {
+                            height: 100px;
+                        }
+                    }
+                    &.description {
+                        width:  200px;
+                        display: inline-block;
                     }
                 }
             }
