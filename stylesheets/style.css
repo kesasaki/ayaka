@@ -265,11 +265,15 @@ body .main .works dl dd img {
   width: 100px;
   height: 100px;
 }
-/* line 244, ../sass/style.scss */
+/* line 241, ../sass/style.scss */
+body .main .contact {
+  position: relative;
+}
+/* line 245, ../sass/style.scss */
 body .main .contact ul li {
   text-align: left;
 }
-/* line 248, ../sass/style.scss */
+/* line 249, ../sass/style.scss */
 body .main .contact button {
   font-size: 1.4em;
   font-weight: bold;
@@ -278,11 +282,28 @@ body .main .contact button {
   border: 2px solid rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
-/* line 255, ../sass/style.scss */
+/* line 256, ../sass/style.scss */
 body .main .contact button:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 /* line 260, ../sass/style.scss */
+body .main .contact .footer {
+  position: absolute;
+  width: 100vw;
+  bottom: 30px;
+  text-align: center;
+}
+/* line 265, ../sass/style.scss */
+body .main .contact .footer .copyright {
+  font-size: 14px;
+}
+@media screen and (max-width: 414px) {
+  /* line 265, ../sass/style.scss */
+  body .main .contact .footer .copyright {
+    font-size: 12px;
+  }
+}
+/* line 273, ../sass/style.scss */
 body .main .box {
   width: 100vw;
   height: 100vh;
@@ -291,7 +312,7 @@ body .main .box {
   justify-content: center;
   flex-direction: column;
 }
-/* line 268, ../sass/style.scss */
+/* line 281, ../sass/style.scss */
 body .main .without-box {
   padding-top: 20px;
 }
