@@ -197,7 +197,7 @@ body {
             }
             dl {
                 padding: 0px;
-                margin: 0px;
+                margin: 10px 0 10px 0;
                 border-bottom: 0px solid #BBBBBB;
                 dt {
                     border-top: 0px solid #BBBBBB;
@@ -217,7 +217,6 @@ body {
                         }
                     }
                     &.description {
-                        width:  200px;
                         display: inline-block;
                     }
                 }
