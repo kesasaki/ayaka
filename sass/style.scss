@@ -138,12 +138,21 @@ body {
                     border-top: 1px solid $border_color;
                     padding-top: 10px;
                     margin-top: 10px;
+                    @include mobile {
+                        width: 80px;
+                        font-size: 13px;
+                    }
                     &.first {
                         margin-top: 0;
                     }
                 }
                 dd {
                     margin-left: 160px;
+                    @include mobile {
+                        margin-left: 80px;
+                        font-size: 13px;
+                        padding-left: 10px;
+                    }
                     &.category {
                         font-weight: bold;
                         border-top: 1px solid $border_color;

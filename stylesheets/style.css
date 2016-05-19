@@ -156,53 +156,68 @@ body .main .news dl dt, body .main .profile dl dt, body .main .works dl dt, body
   padding-top: 10px;
   margin-top: 10px;
 }
-/* line 141, ../sass/style.scss */
+@media screen and (max-width: 414px) {
+  /* line 134, ../sass/style.scss */
+  body .main .news dl dt, body .main .profile dl dt, body .main .works dl dt, body .main .contact dl dt {
+    width: 80px;
+    font-size: 13px;
+  }
+}
+/* line 145, ../sass/style.scss */
 body .main .news dl dt.first, body .main .profile dl dt.first, body .main .works dl dt.first, body .main .contact dl dt.first {
   margin-top: 0;
 }
-/* line 145, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 body .main .news dl dd, body .main .profile dl dd, body .main .works dl dd, body .main .contact dl dd {
   margin-left: 160px;
 }
-/* line 147, ../sass/style.scss */
+@media screen and (max-width: 414px) {
+  /* line 149, ../sass/style.scss */
+  body .main .news dl dd, body .main .profile dl dd, body .main .works dl dd, body .main .contact dl dd {
+    margin-left: 80px;
+    font-size: 13px;
+    padding-left: 10px;
+  }
+}
+/* line 156, ../sass/style.scss */
 body .main .news dl dd.category, body .main .profile dl dd.category, body .main .works dl dd.category, body .main .contact dl dd.category {
   font-weight: bold;
   border-top: 1px solid #BBBBBB;
   padding-top: 10px;
   margin-top: 10px;
 }
-/* line 158, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 body .main .profile img {
   width: auto;
   max-width: 300px;
   margin: 0px auto 30px auto;
   border-radius: 10px;
 }
-/* line 164, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 body .main .profile .activityName {
   padding-bottom: 30px;
   font-size: 24px;
   text-align: left;
 }
-/* line 170, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 body .main .profile .description p {
   text-align: left;
   font-size: 14px;
   line-height: 1.6em;
 }
-/* line 180, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 body .main .works ul {
   list-style: none;
   padding-left: 0px;
   border-bottom: 1px solid #BBBBBB;
 }
-/* line 184, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 body .main .works ul li {
   width: 100%;
   padding: 10px 0 10px 0;
   border-top: 1px solid #BBBBBB;
 }
-/* line 190, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 body .main .works dl {
   padding-bottom: 0px;
   margin-bottom: 0px;
@@ -211,7 +226,7 @@ body .main .works dl {
   padding-top: 0px;
   text-align: right;
 }
-/* line 197, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 body .main .works dl dt {
   text-align: left;
   display: inline-block;
@@ -222,7 +237,7 @@ body .main .works dl dt {
   font-weight: bold;
   clear: both;
 }
-/* line 207, ../sass/style.scss */
+/* line 216, ../sass/style.scss */
 body .main .works dl dd {
   display: inline-box;
   text-align: left;
@@ -232,29 +247,29 @@ body .main .works dl dd {
   border-top: none;
   margin-left: 0px;
 }
-/* line 208, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 body .main .works dl dd.description {
   float: left;
   width: 270px;
 }
-/* line 212, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 body .main .works dl dd.contents {
   margin-left: 80px;
 }
-/* line 222, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 body .main .works dl dd.desription {
   width: 180px;
 }
-/* line 225, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 body .main .works dl dd img {
   width: 100px;
   height: 100px;
 }
-/* line 235, ../sass/style.scss */
+/* line 244, ../sass/style.scss */
 body .main .contact ul li {
   text-align: left;
 }
-/* line 239, ../sass/style.scss */
+/* line 248, ../sass/style.scss */
 body .main .contact button {
   font-size: 1.4em;
   font-weight: bold;
@@ -263,11 +278,11 @@ body .main .contact button {
   border: 2px solid rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
-/* line 246, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 body .main .contact button:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
-/* line 251, ../sass/style.scss */
+/* line 260, ../sass/style.scss */
 body .main .box {
   width: 100vw;
   height: 100vh;
@@ -276,7 +291,7 @@ body .main .box {
   justify-content: center;
   flex-direction: column;
 }
-/* line 259, ../sass/style.scss */
+/* line 268, ../sass/style.scss */
 body .main .without-box {
   padding-top: 20px;
 }
