@@ -239,17 +239,6 @@ body .main .works dl dd.contents {
   width: 100px;
   height: 100px;
 }
-<<<<<<< HEAD
-/* line 241, ../sass/style.scss */
-body .main .contact {
-  position: relative;
-}
-/* line 245, ../sass/style.scss */
-body .main .contact ul li {
-  text-align: left;
-}
-/* line 249, ../sass/style.scss */
-=======
 /* line 214, ../sass/style.scss */
 body .main .works dl dd.contents img {
   height: 100px;
@@ -259,12 +248,15 @@ body .main .works dl dd.description {
   width: 200px;
   display: inline-block;
 }
-/* line 228, ../sass/style.scss */
+/* line 225, ../sass/style.scss */
+body .main .contact {
+  position: relative;
+}
+/* line 229, ../sass/style.scss */
 body .main .contact ul li {
   text-align: left;
 }
-/* line 232, ../sass/style.scss */
->>>>>>> d6f1cf8a4249d1de241923a5379bf5b1b5518c2f
+/* line 233, ../sass/style.scss */
 body .main .contact button {
   font-size: 1.4em;
   font-weight: bold;
@@ -273,36 +265,28 @@ body .main .contact button {
   border: 2px solid rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
-<<<<<<< HEAD
-/* line 256, ../sass/style.scss */
+/* line 240, ../sass/style.scss */
 body .main .contact button:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
-/* line 260, ../sass/style.scss */
+/* line 244, ../sass/style.scss */
 body .main .contact .footer {
   position: absolute;
   width: 100vw;
   bottom: 30px;
   text-align: center;
 }
-/* line 265, ../sass/style.scss */
+/* line 249, ../sass/style.scss */
 body .main .contact .footer .copyright {
   font-size: 14px;
 }
 @media screen and (max-width: 414px) {
-  /* line 265, ../sass/style.scss */
+  /* line 249, ../sass/style.scss */
   body .main .contact .footer .copyright {
     font-size: 12px;
   }
 }
-/* line 273, ../sass/style.scss */
-=======
-/* line 239, ../sass/style.scss */
-body .main .contact button:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-/* line 244, ../sass/style.scss */
->>>>>>> d6f1cf8a4249d1de241923a5379bf5b1b5518c2f
+/* line 257, ../sass/style.scss */
 body .main .box {
   width: 100vw;
   height: 100vh;
@@ -311,11 +295,7 @@ body .main .box {
   justify-content: center;
   flex-direction: column;
 }
-<<<<<<< HEAD
-/* line 281, ../sass/style.scss */
-=======
-/* line 252, ../sass/style.scss */
->>>>>>> d6f1cf8a4249d1de241923a5379bf5b1b5518c2f
+/* line 265, ../sass/style.scss */
 body .main .without-box {
   padding-top: 20px;
 }
