@@ -5,6 +5,7 @@ body {
 }
 /* line 13, ../sass/style.scss */
 body .main .top {
+  color: #ffffff;
   text-align: center;
   height: 100%;
   width: 400px;
@@ -15,7 +16,7 @@ body .main .top {
   background-repeat-y: inherit;
   background-size: cover;
 }
-/* line 25, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
 body .main .top p {
   font-family: "Sorts Mill Goudy", serif;
   font-size: 92px;
@@ -26,24 +27,24 @@ body .main .top p {
   letter-spacing: 15px;
 }
 @media screen and (max-width: 414px) {
-  /* line 25, ../sass/style.scss */
+  /* line 26, ../sass/style.scss */
   body .main .top p {
     font-size: 80px;
     letter-spacing: 0px;
   }
 }
-/* line 39, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 body .main .top #menuWrap {
   width: 100%;
 }
-/* line 41, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 body .main .top #menuWrap .menu-max {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
-/* line 46, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 body .main .top #menuWrap .menu-max .menu {
   width: 90%;
   min-width: 300px;
@@ -53,19 +54,19 @@ body .main .top #menuWrap .menu-max .menu {
   margin-right: auto;
 }
 @media screen and (max-width: 414px) {
-  /* line 46, ../sass/style.scss */
+  /* line 47, ../sass/style.scss */
   body .main .top #menuWrap .menu-max .menu {
     width: 100%;
   }
 }
-/* line 59, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 body .main .top #menuWrap ul {
   font-family: "Sorts Mill Goudy", serif;
   padding: 0;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/* line 64, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 body .main .top #menuWrap ul li {
   display: inline-block;
   list-style-type: none;
@@ -73,17 +74,18 @@ body .main .top #menuWrap ul li {
   font-size: 24px;
 }
 @media screen and (max-width: 414px) {
-  /* line 64, ../sass/style.scss */
+  /* line 65, ../sass/style.scss */
   body .main .top #menuWrap ul li {
     font-size: 19px;
   }
 }
-/* line 72, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 body .main .top #menuWrap ul li a {
   color: #000000;
   text-decoration: none;
+  color: #ffffff;
 }
-/* line 78, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 body .main .top #menuWrap.fixed {
   position: fixed;
   left: 0px;
@@ -91,18 +93,23 @@ body .main .top #menuWrap.fixed {
   z-index: 9999;
   width: 100%;
   background: #FFFFFF;
-  opacity: 0.8;
+  opacity: 0.9;
 }
-/* line 86, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 body .main .top #menuWrap.fixed .menu-max {
   border-bottom-width: 2px;
   border-bottom-style: solid;
+  border-bottom-color: lightgray;
 }
-/* line 89, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 body .main .top #menuWrap.fixed .menu-max .menu {
   border-top: none;
 }
-/* line 96, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
+body .main .top #menuWrap.fixed li a {
+  color: #000000;
+}
+/* line 104, ../sass/style.scss */
 body .main .content-background {
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -114,11 +121,11 @@ body .main .content-background {
   background-repeat-x: no-repeat;
   background-repeat-y: inherit;
 }
-/* line 103, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 body .main .content-background .content-filter {
   background-color: rgba(255, 255, 255, 0.9);
 }
-/* line 107, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 body .main #content {
   width: 100%;
   max-width: 960px;
@@ -127,7 +134,7 @@ body .main #content {
   color: #4C4C4C;
   text-align: center;
 }
-/* line 111, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 body .main #content .contentField {
   width: 90%;
   max-width: 900px;
@@ -135,19 +142,23 @@ body .main #content .contentField {
   margin-right: auto;
   margin-left: auto;
 }
-/* line 123, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
+body .main .news, body .main .profile, body .main .works, body .main .contact {
+  color: #000000;
+}
+/* line 132, ../sass/style.scss */
 body .main .news p, body .main .profile p, body .main .works p, body .main .contact p {
   font-size: 48px;
   font-family: "Sorts Mill Goudy", serif;
 }
-/* line 129, ../sass/style.scss */
+/* line 138, ../sass/style.scss */
 body .main .news dl, body .main .profile dl, body .main .works dl, body .main .contact dl {
   text-align: left;
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #BBBBBB;
 }
-/* line 134, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 body .main .news dl dt, body .main .profile dl dt, body .main .works dl dt, body .main .contact dl dt {
   clear: left;
   float: left;
@@ -157,106 +168,106 @@ body .main .news dl dt, body .main .profile dl dt, body .main .works dl dt, body
   margin-top: 10px;
 }
 @media screen and (max-width: 414px) {
-  /* line 134, ../sass/style.scss */
+  /* line 143, ../sass/style.scss */
   body .main .news dl dt, body .main .profile dl dt, body .main .works dl dt, body .main .contact dl dt {
     width: 80px;
     font-size: 13px;
   }
 }
-/* line 145, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 body .main .news dl dt.first, body .main .profile dl dt.first, body .main .works dl dt.first, body .main .contact dl dt.first {
   margin-top: 0;
 }
-/* line 149, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 body .main .news dl dd, body .main .profile dl dd, body .main .works dl dd, body .main .contact dl dd {
   margin-left: 160px;
 }
 @media screen and (max-width: 414px) {
-  /* line 149, ../sass/style.scss */
+  /* line 158, ../sass/style.scss */
   body .main .news dl dd, body .main .profile dl dd, body .main .works dl dd, body .main .contact dl dd {
     margin-left: 80px;
     font-size: 13px;
     padding-left: 10px;
   }
 }
-/* line 156, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 body .main .news dl dd.category, body .main .profile dl dd.category, body .main .works dl dd.category, body .main .contact dl dd.category {
   font-weight: bold;
   border-top: 1px solid #BBBBBB;
   padding-top: 10px;
   margin-top: 10px;
 }
-/* line 167, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 body .main .profile img {
   width: auto;
   max-width: 300px;
   margin: 0px auto 30px auto;
   border-radius: 10px;
 }
-/* line 173, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 body .main .profile .activityName {
   padding-bottom: 30px;
   font-size: 24px;
   text-align: left;
 }
-/* line 179, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 body .main .profile .description p {
   text-align: left;
   font-size: 14px;
   line-height: 1.6em;
 }
-/* line 189, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 body .main .works ul {
   list-style: none;
   padding-left: 0px;
 }
-/* line 192, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 body .main .works ul li {
   width: 100%;
   border-top: 1px solid #BBBBBB;
   border-bottom: 1px solid #BBBBBB;
 }
-/* line 198, ../sass/style.scss */
+/* line 207, ../sass/style.scss */
 body .main .works dl {
   padding: 0px;
   margin: 10px 0 10px 0;
   border-bottom: 0px solid #BBBBBB;
 }
-/* line 202, ../sass/style.scss */
+/* line 211, ../sass/style.scss */
 body .main .works dl dt {
   border-top: 0px solid #BBBBBB;
   padding-top: 0;
   margin-top: 0;
   float: none;
 }
-/* line 208, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 body .main .works dl dd {
   margin-left: 0px;
   vertical-align: top;
 }
-/* line 211, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 body .main .works dl dd.contents {
   display: inline-block;
   width: 100px;
   height: 100px;
 }
-/* line 215, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 body .main .works dl dd.contents img {
   height: 100px;
 }
-/* line 219, ../sass/style.scss */
+/* line 228, ../sass/style.scss */
 body .main .works dl dd.description {
   display: inline-block;
 }
-/* line 225, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 body .main .contact {
   position: relative;
 }
-/* line 229, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
 body .main .contact ul li {
   text-align: left;
 }
-/* line 233, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 body .main .contact button {
   font-size: 1.4em;
   font-weight: bold;
@@ -265,28 +276,28 @@ body .main .contact button {
   border: 2px solid rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
-/* line 240, ../sass/style.scss */
+/* line 249, ../sass/style.scss */
 body .main .contact button:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
-/* line 244, ../sass/style.scss */
+/* line 253, ../sass/style.scss */
 body .main .contact .footer {
   position: absolute;
   width: 100vw;
   bottom: 30px;
   text-align: center;
 }
-/* line 249, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 body .main .contact .footer .copyright {
   font-size: 14px;
 }
 @media screen and (max-width: 414px) {
-  /* line 249, ../sass/style.scss */
+  /* line 258, ../sass/style.scss */
   body .main .contact .footer .copyright {
     font-size: 12px;
   }
 }
-/* line 257, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 body .main .box {
   width: 100vw;
   height: 100vh;
@@ -295,7 +306,7 @@ body .main .box {
   justify-content: center;
   flex-direction: column;
 }
-/* line 265, ../sass/style.scss */
+/* line 274, ../sass/style.scss */
 body .main .without-box {
   padding-top: 20px;
 }

@@ -11,6 +11,7 @@ body {
     border: 0px;
     .main {
         .top {
+            color: #ffffff;
             text-align: center;
             height: 100%;
             width: $contents_width;
@@ -72,6 +73,7 @@ body {
                         a {
                             @include link-colors($font_color);
                             text-decoration: none;
+                            color: #ffffff;
                         }
                     }
                 }
@@ -82,12 +84,18 @@ body {
                     z-index: 9999;
                     width: 100%;
                     background: #FFFFFF;
-                    opacity: 0.8;
+                    opacity: 0.9;
                     .menu-max {
                         border-bottom-width: 2px;
                         border-bottom-style: solid;
+                        border-bottom-color: lightgray;
                         .menu {
                             border-top: none;
+                        }
+                    }
+                    li{
+                        a {
+                            color: #000000;
                         }
                     }
                 }
@@ -120,6 +128,7 @@ body {
             text-align: center;
         }
         .news {
+            color: #000000;
             p {
                 font-size: 48px;
                 font-family: $title_font_family;
