@@ -264,7 +264,7 @@ body .main .works dl dd.description.music {
 /* line 235, ../sass/style.scss */
 body .main .contact {
   text-align: center;
-  height: 700px;
+  height: 100vh;
   position: relative;
 }
 /* line 240, ../sass/style.scss */
