@@ -198,10 +198,10 @@ body {
             ul {
                 list-style: none;
                 padding-left: 0px;
+                border-bottom: 1px solid $border_color;
                 li {
                     width: 100%;
                     border-top:    1px solid $border_color;
-                    border-bottom: 1px solid $border_color;
                 }
             }
             dl {

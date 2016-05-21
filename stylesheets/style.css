@@ -220,12 +220,12 @@ body .main .profile .description p {
 body .main .works ul {
   list-style: none;
   padding-left: 0px;
+  border-bottom: 1px solid #BBBBBB;
 }
-/* line 201, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 body .main .works ul li {
   width: 100%;
   border-top: 1px solid #BBBBBB;
-  border-bottom: 1px solid #BBBBBB;
 }
 /* line 207, ../sass/style.scss */
 body .main .works dl {
