@@ -248,26 +248,28 @@ body .main .works dl dd {
 /* line 220, ../sass/style.scss */
 body .main .works dl dd.contents {
   display: inline-block;
-  width: 100px;
-  height: 100px;
 }
-/* line 224, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 body .main .works dl dd.contents img {
-  height: 100px;
+  width: 100px;
 }
-/* line 228, ../sass/style.scss */
+/* line 226, ../sass/style.scss */
 body .main .works dl dd.description {
   display: inline-block;
 }
-/* line 234, ../sass/style.scss */
+/* line 228, ../sass/style.scss */
+body .main .works dl dd.description.music {
+  width: 50%;
+}
+/* line 235, ../sass/style.scss */
 body .main .contact {
   position: relative;
 }
-/* line 238, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 body .main .contact ul li {
   text-align: left;
 }
-/* line 242, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 body .main .contact button {
   font-size: 1.4em;
   font-weight: bold;
@@ -276,28 +278,28 @@ body .main .contact button {
   border: 2px solid rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
-/* line 249, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 body .main .contact button:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
-/* line 253, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
 body .main .contact .footer {
   position: absolute;
   width: 100vw;
   bottom: 30px;
   text-align: center;
 }
-/* line 258, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 body .main .contact .footer .copyright {
   font-size: 14px;
 }
 @media screen and (max-width: 414px) {
-  /* line 258, ../sass/style.scss */
+  /* line 259, ../sass/style.scss */
   body .main .contact .footer .copyright {
     font-size: 12px;
   }
 }
-/* line 266, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 body .main .box {
   padding-top: 20px;
   width: 100vw;
@@ -306,7 +308,7 @@ body .main .box {
   align-items: center;
   flex-direction: column;
 }
-/* line 274, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 body .main .without-box {
   padding-top: 20px;
 }

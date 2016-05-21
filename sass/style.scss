@@ -219,14 +219,15 @@ body {
                     vertical-align: top;
                     &.contents {
                         display: inline-block;
-                        width:  100px;
-                        height: 100px;
                         img {
-                            height: 100px;
+                            width: 100px;
                         }
                     }
                     &.description {
                         display: inline-block;
+                        &.music {
+                            width: 50%;
+                        }
                     }
                 }
             }
