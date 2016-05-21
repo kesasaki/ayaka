@@ -263,13 +263,19 @@ body .main .works dl dd.description.music {
 }
 /* line 235, ../sass/style.scss */
 body .main .contact {
+  text-align: center;
+  height: 700px;
   position: relative;
 }
-/* line 239, ../sass/style.scss */
+/* line 240, ../sass/style.scss */
+body .main .contact ul {
+  margin-left: 70px;
+}
+/* line 242, ../sass/style.scss */
 body .main .contact ul li {
   text-align: left;
 }
-/* line 243, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 body .main .contact button {
   font-size: 1.4em;
   font-weight: bold;
@@ -278,37 +284,37 @@ body .main .contact button {
   border: 2px solid rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
-/* line 250, ../sass/style.scss */
+/* line 253, ../sass/style.scss */
 body .main .contact button:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
-/* line 254, ../sass/style.scss */
+/* line 257, ../sass/style.scss */
 body .main .contact .footer {
   position: absolute;
   width: 100vw;
   bottom: 30px;
   text-align: center;
 }
-/* line 259, ../sass/style.scss */
+/* line 262, ../sass/style.scss */
 body .main .contact .footer .copyright {
   font-size: 14px;
 }
 @media screen and (max-width: 414px) {
-  /* line 259, ../sass/style.scss */
+  /* line 262, ../sass/style.scss */
   body .main .contact .footer .copyright {
     font-size: 12px;
   }
 }
-/* line 267, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 body .main .box {
-  padding-top: 20px;
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
-/* line 275, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 body .main .without-box {
   padding-top: 20px;
 }

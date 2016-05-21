@@ -233,9 +233,12 @@ body {
             }
         }
         .contact {
+            text-align: center;
+            height: 100vh;
             position: relative;
             @extend .news;
             ul {
+                margin-left: 70px;
                 li {
                     text-align: left;
                 }
@@ -265,11 +268,11 @@ body {
             }
         }
         .box {
-            padding-top: 20px;
             width: 100vw;
             height: 100vh;
             display: flex;
             align-items: center;
+            justify-content: center;
             flex-direction: column;
         }
         .without-box {
