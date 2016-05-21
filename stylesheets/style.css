@@ -299,11 +299,11 @@ body .main .contact .footer .copyright {
 }
 /* line 266, ../sass/style.scss */
 body .main .box {
+  padding-top: 20px;
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 /* line 274, ../sass/style.scss */
