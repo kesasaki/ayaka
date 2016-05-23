@@ -222,11 +222,17 @@ body {
                         display: inline-block;
                         img {
                             width: 100px;
+                            @include pc {
+                                width: 150px;
+                            }
                         }
                     }
                     &.description {
                         display: inline-block;
                         &.music {
+                            @include pc {
+                                margin-left: 150px;
+                            }
                             @include mobile {
                                 width: 50%;
                             }
