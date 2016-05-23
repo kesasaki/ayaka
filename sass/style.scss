@@ -250,7 +250,9 @@ body {
             position: relative;
             @extend .news;
             ul {
-                margin-left: 70px;
+                display: inline-block;
+                *display: inline;
+                *zoom: 1;
                 li {
                     text-align: left;
                 }
