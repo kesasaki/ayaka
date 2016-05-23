@@ -11,7 +11,7 @@ $(function(){
 
     var box    = $("#menuWrap");
     var boxTop = box.offset().top;
-    var targetPos = 700;
+    var targetPos = 500;
     $(window).on('scroll touchmove', function() {
         box.removeClass('fixed');
         var ScrollPos = $(window).scrollTop();
