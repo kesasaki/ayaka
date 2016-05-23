@@ -90,26 +90,27 @@ body .main .top #menuWrap.fixed {
   position: fixed;
   left: 0px;
   top: 0px;
+  display: none;
   z-index: 9999;
   width: 100%;
   background: #FFFFFF;
   opacity: 0.9;
 }
-/* line 88, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 body .main .top #menuWrap.fixed .menu-max {
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: lightgray;
 }
-/* line 92, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 body .main .top #menuWrap.fixed .menu-max .menu {
   border-top: none;
 }
-/* line 97, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 body .main .top #menuWrap.fixed li a {
   color: #000000;
 }
-/* line 104, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 body .main .content-background {
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -121,11 +122,11 @@ body .main .content-background {
   background-repeat-x: no-repeat;
   background-repeat-y: inherit;
 }
-/* line 111, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 body .main .content-background .content-filter {
   background-color: rgba(255, 255, 255, 0.9);
 }
-/* line 115, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 body .main #content {
   width: 100%;
   max-width: 960px;
@@ -134,7 +135,7 @@ body .main #content {
   color: #4C4C4C;
   text-align: center;
 }
-/* line 119, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 body .main #content .contentField {
   width: 90%;
   max-width: 900px;
@@ -142,23 +143,23 @@ body .main #content .contentField {
   margin-right: auto;
   margin-left: auto;
 }
-/* line 130, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 body .main .news, body .main .profile, body .main .works, body .main .contact {
   color: #000000;
 }
-/* line 132, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 body .main .news p, body .main .profile p, body .main .works p, body .main .contact p {
   font-size: 48px;
   font-family: "Sorts Mill Goudy", serif;
 }
-/* line 138, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 body .main .news dl, body .main .profile dl, body .main .works dl, body .main .contact dl {
   text-align: left;
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #BBBBBB;
 }
-/* line 143, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 body .main .news dl dt, body .main .profile dl dt, body .main .works dl dt, body .main .contact dl dt {
   clear: left;
   float: left;
@@ -168,114 +169,114 @@ body .main .news dl dt, body .main .profile dl dt, body .main .works dl dt, body
   margin-top: 10px;
 }
 @media screen and (max-width: 414px) {
-  /* line 143, ../sass/style.scss */
+  /* line 144, ../sass/style.scss */
   body .main .news dl dt, body .main .profile dl dt, body .main .works dl dt, body .main .contact dl dt {
     width: 80px;
     font-size: 13px;
   }
 }
-/* line 154, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 body .main .news dl dt.first, body .main .profile dl dt.first, body .main .works dl dt.first, body .main .contact dl dt.first {
   margin-top: 0;
 }
-/* line 158, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 body .main .news dl dd, body .main .profile dl dd, body .main .works dl dd, body .main .contact dl dd {
   margin-left: 160px;
 }
 @media screen and (max-width: 414px) {
-  /* line 158, ../sass/style.scss */
+  /* line 159, ../sass/style.scss */
   body .main .news dl dd, body .main .profile dl dd, body .main .works dl dd, body .main .contact dl dd {
     margin-left: 80px;
     font-size: 13px;
     padding-left: 10px;
   }
 }
-/* line 165, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 body .main .news dl dd.category, body .main .profile dl dd.category, body .main .works dl dd.category, body .main .contact dl dd.category {
   font-weight: bold;
   border-top: 1px solid #BBBBBB;
   padding-top: 10px;
   margin-top: 10px;
 }
-/* line 176, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 body .main .profile img {
   width: auto;
   max-width: 300px;
   margin: 0px auto 30px auto;
   border-radius: 10px;
 }
-/* line 182, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
 body .main .profile .activityName {
   padding-bottom: 30px;
   font-size: 24px;
   text-align: left;
 }
-/* line 188, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 body .main .profile .description p {
   text-align: left;
   font-size: 14px;
   line-height: 1.6em;
 }
-/* line 198, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 body .main .works ul {
   list-style: none;
   padding-left: 0px;
   border-bottom: 1px solid #BBBBBB;
 }
-/* line 202, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 body .main .works ul li {
   width: 100%;
   border-top: 1px solid #BBBBBB;
 }
-/* line 207, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 body .main .works dl {
   padding: 0px;
   margin: 10px 0 10px 0;
   border-bottom: 0px solid #BBBBBB;
 }
-/* line 211, ../sass/style.scss */
+/* line 212, ../sass/style.scss */
 body .main .works dl dt {
   border-top: 0px solid #BBBBBB;
   padding-top: 0;
   margin-top: 0;
   float: none;
 }
-/* line 217, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 body .main .works dl dd {
   margin-left: 0px;
   vertical-align: top;
 }
-/* line 220, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 body .main .works dl dd.contents {
   display: inline-block;
 }
-/* line 222, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 body .main .works dl dd.contents img {
   width: 100px;
 }
-/* line 226, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 body .main .works dl dd.description {
   display: inline-block;
 }
-/* line 228, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 body .main .works dl dd.description.music {
   width: 50%;
 }
-/* line 235, ../sass/style.scss */
+/* line 236, ../sass/style.scss */
 body .main .contact {
   text-align: center;
   height: 100vh;
   position: relative;
 }
-/* line 240, ../sass/style.scss */
+/* line 241, ../sass/style.scss */
 body .main .contact ul {
   margin-left: 70px;
 }
-/* line 242, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 body .main .contact ul li {
   text-align: left;
 }
-/* line 246, ../sass/style.scss */
+/* line 247, ../sass/style.scss */
 body .main .contact button {
   font-size: 1.4em;
   font-weight: bold;
@@ -284,28 +285,28 @@ body .main .contact button {
   border: 2px solid rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
-/* line 253, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
 body .main .contact button:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
-/* line 257, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 body .main .contact .footer {
   position: absolute;
   width: 100vw;
   bottom: 30px;
   text-align: center;
 }
-/* line 262, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 body .main .contact .footer .copyright {
   font-size: 14px;
 }
 @media screen and (max-width: 414px) {
-  /* line 262, ../sass/style.scss */
+  /* line 263, ../sass/style.scss */
   body .main .contact .footer .copyright {
     font-size: 12px;
   }
 }
-/* line 270, ../sass/style.scss */
+/* line 271, ../sass/style.scss */
 body .main .box {
   width: 100vw;
   height: 100vh;
@@ -314,7 +315,7 @@ body .main .box {
   justify-content: center;
   flex-direction: column;
 }
-/* line 278, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 body .main .without-box {
   padding-top: 20px;
 }
