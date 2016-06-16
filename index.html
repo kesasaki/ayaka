@@ -32,9 +32,29 @@
         <div class="content-filter">
           <div id="content">
             <div class="contentField">
+<!--
+
+What's New ↓↓
+
+-->
               <div class="without-box news" id="news">
                 <p>What's New</p>
                 <dl>
+<!--
+
+この階層にニュースを追加してください
+以下の形式です
+
+                  <dt>201X.X.X</dt>
+                  <dd class="category">カテゴリ名（PV / RELEASE / LIVE / OFFER）</dd>
+                  <dd>詳細</dd>
+注意事項
+・一番初めのdtには class="first" と入れてください
+・詳細で改行を行いたい場合は<br>を入れてください
+・上から新しい順で入れてください
+・ニュース数に上限はありませんが、基本的には上に1つ追加したら一番下のニュースを消してください
+
+-->
                   <dt class="first">2016.8. </dt>
                   <dd class="category">LIVE</dd>
                   <dd>AyakaSamano 1stReleaseLive<br>詳細は随時更新致します</dd>
@@ -58,6 +78,11 @@
                   <dd>虹創旅団 2015年夏公演「WonderLast」<br>劇中曲『32bitの涙、そして新しい世界』</dd>
                 </dl>
               </div>
+<!--
+
+What's New ↑↑
+
+-->
               <div class="without-box profile" id="profile">
                 <p>Profile</p>
                 <img src="image/P1020276.jpg">
@@ -70,9 +95,108 @@
                   <p>2008年 17歳本格的にDTMでの作曲を開始</p>
                 </div>
               </div>
+<!--
+
+Works ↓↓
+
+-->
               <div class="without-box works" id="works">
                 <p>Works</p>
                 <ul>
+<!--
+
+この階層にワークスを追加してください
+以下の形式です
+
+
+CD（画像）の場合
+                  <li>
+                    <dl>
+                      <dt>music</dt>
+                      <dd class="contents">
+                        <a href="./image/画像名">
+                          <img src="./image/画像名">
+                        </a>
+                      </dd>
+                      <dd class="description music">
+                          詳細
+                      </dd>
+                    </dl>
+                  </li>
+
+CDの場合の注意事項
+・あらかじめ画像を「image」フォルダにアップロードしてください（方法はPDF資料を参考）
+・画像は100px x 100px より大きい正方形にしてください
+・画像は1MB以下の大きさにしてください
+・詳細では<br>で改行できます
+
+
+
+Video(Youtube)の場合
+
+                  <li>
+                    <dl>
+                      <dt>video</dt>
+                      <dd class="contents">
+                        <iframe src="https://www.youtube.com/embed/{埋め込みコードの動画ID}?modestbranding=1&rel=0&showinfo=0&theme=light&autohide=1" width="100%" frameborder="0" allowfullscreen></iframe>
+                      </dd>
+                      <dd class="description">動画タイトル<br>
+                        <span class="pc-only">
+                          pcで出す文章
+                        </span>
+                      </dd>
+                    </dl>
+                  </li>
+
+Videoの場合の注意事項
+・あらかじめYoutubeに動画をアップロードしてください
+・アップロードした動画のIDを{埋め込みコードの動画ID}に入れてください
+・「pcで出す文章」ではpc表示で生まれる空白に文字を出せます。30文字以下で改行<br>を入れてください
+・6行以上ではレイアウトが崩れる可能性があります
+
+Youtube動画IDとは
+　https://www.youtube.com/watch?v=oEGLL0_xxjc&feature=youtu.be
+　↑ の「oEGLL0_xxjc」の部分です
+
+
+
+Sound(soundcloud)の場合
+
+                  <li>
+                    <dl>
+                      <dt>sound</dt>
+                      <dd class="contents">
+                        <iframe width="100%" height="100px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{トラックの埋め込みID}&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false"></iframe>
+                      </dd>
+                      <dd class="description">楽曲タイトル<br>
+                        <span class="pc-only">
+                          pcで出す文章
+                        </span>
+                      </dd>
+                    </dl>
+                  </li>
+
+Soundの場合の注意事項
+・あらかじめSoundCloudに楽曲をアップロードしてください
+・アップロードした楽曲の埋め込みIDを{トラックの埋め込みID}に入れてください（長いURLの真ん中あたりにあります）
+・「pcで出す文章」ではpc表示で生まれる空白に文字を出せます。30文字以下で改行<br>を入れてください
+・4行以上ではレイアウトが崩れる可能性があります
+
+トラックの埋め込みIDの取得方法
+ 1. soundcloudにアクセス　例）https://soundcloud.com/user-204681034
+ 2. 楽曲の「share」をクリック　（モーダルが開きます）
+ 3. 「Embed」タブを選択（モーダル上部）
+ 4. Code and preview のURL内の
+<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/259912700&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>/
+→　　　　　　　→　　　　　　　→　　　　　　　→　　　　　　　→　　　　　　　→　　　　　　　→　　　　　　　→　　　　　　　→　　　　　　　→　　　　↑↑↑↑↑↑↑↑ ここの数値です（&amp; は含めない）
+
+
+
+全体の注意事項
+・music video sound は順番関係なく挿入できます
+・Works数に上限はありませんが、基本的には上に1つ追加したら一番のを消してください
+・およそ6個ほどが適切なWorks数です
+-->
                   <li>
                     <dl>
                       <dt>music</dt>
@@ -138,6 +262,11 @@
               </div>
             </div>
           </div>
+<!--
+
+Works ↑↑
+
+-->
           <div class="without-box contact" id="contact">
             <p>Contact</p>
             <div class="description">
