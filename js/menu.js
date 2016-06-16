@@ -18,7 +18,7 @@ $(function(){
         if (ScrollPos > targetPos) {
             box.stop();
             box.css('display', 'none');
-            box.delay(300).addClass('fixed').fadeIn('fast');
+            box.delay(300).addClass('fixed').fadeIn('slow');
         } else {
             box.css('display', 'inline');
             box.css('opacity', 1);
