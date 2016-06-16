@@ -161,7 +161,7 @@ body {
                     @include mobile {
                         margin-left: 80px;
                         font-size: 13px;
-                        padding-left: 10px;
+                        padding-left: 0;
                     }
                     &.category {
                         font-weight: bold;
@@ -216,7 +216,7 @@ body {
                     float: none;
                 }
                 dd {
-                    margin: 0 0 0 10px;
+                    margin: 0 0 0 0;
                     vertical-align: top;
                     &.contents {
                         display: inline-block;

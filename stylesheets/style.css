@@ -188,7 +188,7 @@ body .main .news dl dd, body .main .profile dl dd, body .main .works dl dd, body
   body .main .news dl dd, body .main .profile dl dd, body .main .works dl dd, body .main .contact dl dd {
     margin-left: 80px;
     font-size: 13px;
-    padding-left: 10px;
+    padding-left: 0;
   }
 }
 /* line 166, ../sass/style.scss */
@@ -243,7 +243,7 @@ body .main .works dl dt {
 }
 /* line 218, ../sass/style.scss */
 body .main .works dl dd {
-  margin: 0 0 0 10px;
+  margin: 0 0 0 0;
   vertical-align: top;
 }
 /* line 221, ../sass/style.scss */
