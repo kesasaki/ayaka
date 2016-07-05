@@ -336,7 +336,7 @@ body .main .contact ul li {
 body .main .contact button {
   font-size: 1.4em;
   font-weight: bold;
-  padding: 10px 30px;
+  padding: 14px 30px 10px 30px;
   background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid rgba(0, 0, 0, 0.6);
   border-radius: 10px;
@@ -346,24 +346,42 @@ body .main .contact button {
 body .main .contact button:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
-/* line 303, ../sass/style.scss */
+@media screen and (min-width: 769px) {
+  /* line 303, ../sass/style.scss */
+  body .main .contact .help-mail {
+    margin-top: 20px;
+    font-size: small;
+  }
+  /* line 307, ../sass/style.scss */
+  body .main .contact .help-mail a {
+    color: gray;
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 414px) {
+  /* line 303, ../sass/style.scss */
+  body .main .contact .help-mail {
+    display: none;
+  }
+}
+/* line 316, ../sass/style.scss */
 body .main .contact .footer {
   position: absolute;
   width: 100vw;
   bottom: 30px;
   text-align: center;
 }
-/* line 308, ../sass/style.scss */
+/* line 321, ../sass/style.scss */
 body .main .contact .footer .copyright {
   font-size: 14px;
 }
 @media screen and (max-width: 414px) {
-  /* line 308, ../sass/style.scss */
+  /* line 321, ../sass/style.scss */
   body .main .contact .footer .copyright {
     font-size: 12px;
   }
 }
-/* line 316, ../sass/style.scss */
+/* line 329, ../sass/style.scss */
 body .main .box {
   width: 100vw;
   height: 100vh;
@@ -372,7 +390,7 @@ body .main .box {
   justify-content: center;
   flex-direction: column;
 }
-/* line 324, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 body .main .without-box {
   padding-top: 20px;
 }
