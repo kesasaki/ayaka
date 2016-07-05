@@ -340,29 +340,30 @@ body .main .contact button {
   background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid rgba(0, 0, 0, 0.6);
   border-radius: 10px;
+  font-family: "Sorts Mill Goudy", serif;
 }
-/* line 298, ../sass/style.scss */
+/* line 299, ../sass/style.scss */
 body .main .contact button:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
-/* line 302, ../sass/style.scss */
+/* line 303, ../sass/style.scss */
 body .main .contact .footer {
   position: absolute;
   width: 100vw;
   bottom: 30px;
   text-align: center;
 }
-/* line 307, ../sass/style.scss */
+/* line 308, ../sass/style.scss */
 body .main .contact .footer .copyright {
   font-size: 14px;
 }
 @media screen and (max-width: 414px) {
-  /* line 307, ../sass/style.scss */
+  /* line 308, ../sass/style.scss */
   body .main .contact .footer .copyright {
     font-size: 12px;
   }
 }
-/* line 315, ../sass/style.scss */
+/* line 316, ../sass/style.scss */
 body .main .box {
   width: 100vw;
   height: 100vh;
@@ -371,7 +372,7 @@ body .main .box {
   justify-content: center;
   flex-direction: column;
 }
-/* line 323, ../sass/style.scss */
+/* line 324, ../sass/style.scss */
 body .main .without-box {
   padding-top: 20px;
 }
