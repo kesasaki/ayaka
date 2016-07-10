@@ -63,7 +63,7 @@ body .main .top {
   background-repeat-x: no-repeat;
   background-repeat-y: inherit;
   background-size: cover;
-  text-shadow: 0 1px 20px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 5px 20px black;
 }
 /* line 69, ../sass/style.scss */
 body .main .top p {
