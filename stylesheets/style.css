@@ -509,18 +509,22 @@ body .main .contact ul li {
   text-align: left;
 }
 /* line 412, ../sass/style.scss */
+body .main .contact .contact-wrapper {
+  margin-top: 20px;
+}
+/* line 415, ../sass/style.scss */
 body .main .contact input[name=contact-modal-radio] {
   display: none;
 }
-/* line 415, ../sass/style.scss */
+/* line 418, ../sass/style.scss */
 body .main .contact .contact-modal-open:checked ~ .contact-modal-closer {
   display: block;
 }
-/* line 418, ../sass/style.scss */
+/* line 421, ../sass/style.scss */
 body .main .contact .contact-modal-open:checked ~ .contact-modal {
   display: block;
 }
-/* line 421, ../sass/style.scss */
+/* line 424, ../sass/style.scss */
 body .main .contact .contact-modal-closer {
   display: none;
   position: fixed;
@@ -532,7 +536,7 @@ body .main .contact .contact-modal-closer {
   background-color: #000;
   z-index: 99;
 }
-/* line 432, ../sass/style.scss */
+/* line 435, ../sass/style.scss */
 body .main .contact .contact-modal {
   display: none;
   position: fixed;
@@ -549,15 +553,15 @@ body .main .contact .contact-modal {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 444, ../sass/style.scss */
+/* line 447, ../sass/style.scss */
 body .main .contact .contact-modal li {
   display: none;
 }
-/* line 447, ../sass/style.scss */
+/* line 450, ../sass/style.scss */
 body .main .contact .contact-modal .form-group {
   margin-bottom: 10px;
 }
-/* line 449, ../sass/style.scss */
+/* line 452, ../sass/style.scss */
 body .main .contact .contact-modal .form-group label {
   display: inline-block;
   text-align: right;
@@ -569,25 +573,25 @@ body .main .contact .contact-modal .form-group label {
   font-weight: 700;
 }
 @media screen and (max-width: 768px) {
-  /* line 449, ../sass/style.scss */
+  /* line 452, ../sass/style.scss */
   body .main .contact .contact-modal .form-group label {
     width: 100%;
     text-align: left;
     margin-left: 0px;
   }
 }
-/* line 464, ../sass/style.scss */
+/* line 467, ../sass/style.scss */
 body .main .contact .contact-modal .form-group div {
   display: inline-block;
   width: 450px;
 }
 @media screen and (max-width: 768px) {
-  /* line 464, ../sass/style.scss */
+  /* line 467, ../sass/style.scss */
   body .main .contact .contact-modal .form-group div {
     width: 100%;
   }
 }
-/* line 470, ../sass/style.scss */
+/* line 473, ../sass/style.scss */
 body .main .contact .contact-modal .form-group div input {
   display: block;
   width: 399px;
@@ -611,12 +615,12 @@ body .main .contact .contact-modal .form-group div input {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 485, ../sass/style.scss */
+/* line 488, ../sass/style.scss */
 body .main .contact .contact-modal .form-group div input.error {
   border: 1px solid #e6846e;
 }
 @media screen and (max-width: 768px) {
-  /* line 470, ../sass/style.scss */
+  /* line 473, ../sass/style.scss */
   body .main .contact .contact-modal .form-group div input {
     display: inherit;
     width: 90%;
@@ -624,7 +628,7 @@ body .main .contact .contact-modal .form-group div input.error {
     margin-left: 0px;
   }
 }
-/* line 495, ../sass/style.scss */
+/* line 498, ../sass/style.scss */
 body .main .contact .contact-modal .form-group div textarea {
   display: block;
   width: 399px;
@@ -649,12 +653,12 @@ body .main .contact .contact-modal .form-group div textarea {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 511, ../sass/style.scss */
+/* line 514, ../sass/style.scss */
 body .main .contact .contact-modal .form-group div textarea.error {
   border: 1px solid #e6846e;
 }
 @media screen and (max-width: 768px) {
-  /* line 495, ../sass/style.scss */
+  /* line 498, ../sass/style.scss */
   body .main .contact .contact-modal .form-group div textarea {
     display: inherit;
     width: 90%;
@@ -664,7 +668,7 @@ body .main .contact .contact-modal .form-group div textarea.error {
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 432, ../sass/style.scss */
+  /* line 435, ../sass/style.scss */
   body .main .contact .contact-modal {
     width: 400px;
     height: 355px;
@@ -673,7 +677,7 @@ body .main .contact .contact-modal .form-group div textarea.error {
   }
 }
 @media screen and (max-width: 414px) {
-  /* line 432, ../sass/style.scss */
+  /* line 435, ../sass/style.scss */
   body .main .contact .contact-modal {
     width: 320px;
     height: 355px;
@@ -681,52 +685,52 @@ body .main .contact .contact-modal .form-group div textarea.error {
     margin-top: -177px;
   }
 }
-/* line 538, ../sass/style.scss */
+/* line 541, ../sass/style.scss */
 body .main .contact .contact-button {
   font-size: 1.4em;
   font-weight: bold;
-  padding: 14px 30px 10px 30px;
+  padding: 10px 30px 10px 30px;
   background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   font-family: "Sorts Mill Goudy", serif;
 }
-/* line 546, ../sass/style.scss */
+/* line 549, ../sass/style.scss */
 body .main .contact .contact-button:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 769px) {
-  /* line 550, ../sass/style.scss */
+  /* line 553, ../sass/style.scss */
   body .main .contact .help-mail {
     margin-top: 20px;
     font-size: small;
   }
-  /* line 554, ../sass/style.scss */
+  /* line 557, ../sass/style.scss */
   body .main .contact .help-mail a {
     color: gray;
     text-decoration: none;
   }
 }
 @media screen and (max-width: 414px) {
-  /* line 550, ../sass/style.scss */
+  /* line 553, ../sass/style.scss */
   body .main .contact .help-mail {
     display: none;
   }
 }
-/* line 563, ../sass/style.scss */
+/* line 566, ../sass/style.scss */
 body .main .contact .footer {
   position: absolute;
   width: 100vw;
-  bottom: 30px;
+  bottom: 80px;
   text-align: center;
 }
 @media screen and (max-width: 414px) {
-  /* line 568, ../sass/style.scss */
+  /* line 571, ../sass/style.scss */
   body .main .contact .footer .copyright {
     font-size: 12px;
   }
 }
-/* line 575, ../sass/style.scss */
+/* line 578, ../sass/style.scss */
 body .main .box {
   width: 100vw;
   height: 100vh;
@@ -735,7 +739,7 @@ body .main .box {
   justify-content: center;
   flex-direction: column;
 }
-/* line 583, ../sass/style.scss */
+/* line 586, ../sass/style.scss */
 body .main .without-box {
   padding-top: 20px;
 }
