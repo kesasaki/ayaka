@@ -312,6 +312,7 @@ body {
                     margin: 0 0 0 0;
                     vertical-align: top;
                     &.contents {
+                        border-top: inherit;
                         display: inline-block;
                         width: 100%;
                         max-width: 300px;
@@ -355,6 +356,7 @@ body {
                         }
                     }
                     &.description {
+                        border-top: inherit;
                         display: inline-block;
                         .description-wrapper {
                             margin-left: 10px;
