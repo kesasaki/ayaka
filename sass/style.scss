@@ -253,11 +253,24 @@ body {
                 margin: 10px 0 10px 0;
                 border-bottom: 0px solid #BBBBBB;
                 dt {
+                    width: 60px;
                     border-top: 0px solid #BBBBBB;
+                    @include border-radius(4px);
                     padding-top: 0;
                     margin: 0 0 5px 0;
                     float: none;
-                    font-weight: 700;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 12px;
+                    &.music {
+                        background-color: #00cc11;
+                    }
+                    &.video {
+                        background-color: #e52d27;
+                    }
+                    &.sound {
+                        background-color: #00aabb;
+                    }
                 }
                 dd {
                     margin: 0 0 0 0;
@@ -307,19 +320,39 @@ body {
                     }
                     &.description {
                         display: inline-block;
+                        .description-wrapper {
+                            margin-left: 10px;
+                            .description-date {
+                                font-weight: 400;
+                                font-size: 14px;
+                            }
+                            .description-title {
+                                font-weight: 600;
+                            }
+                            .description-body {
+                                margin-left: 10px;
+                                font-size: 14px;
+                                color: gray;
+                                @include mobile {
+                                    font-size: 12px;
+                                }
+                            }
+                            @include mobile {
+                                margin-left: 0px;
+                            }
+                        }
                         @include tablet {
                             width: 49%;
                             &.music {
                                 width: inherit;
                             }
                         }
+                        @include mobile {
+                            margin-top: 10px;
+                        }
                         .pc-only {
                             @include mobile {
                                 display: none;
-                            }
-                            @include pc {
-                                max-width: 300px;
-                                color: gray;
                             }
                         }
                     }
