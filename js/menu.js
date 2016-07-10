@@ -8,20 +8,4 @@ $(function(){
          window.history.pushState(null, null, this.hash);
          return false;
     });
-
-    var box    = $("#menuWrap");
-    var boxTop = box.offset().top;
-    var targetPos = 500;
-    $(window).on('scroll touchmove', function() {
-        box.removeClass('fixed');
-        var ScrollPos = $(window).scrollTop();
-        if (ScrollPos > targetPos) {
-            box.stop();
-            box.css('display', 'none');
-            box.delay(300).addClass('fixed').fadeIn('slow');
-        } else {
-            box.css('display', 'inline');
-            box.css('opacity', 1);
-        }
-    });
 });

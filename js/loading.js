@@ -1,14 +1,10 @@
 $(function() {
-  var h = $(window).height();
- 
-  $('#wrap').css('display','none');
-  $('#loader-bg ,#loader').height(h).css('display','block');
+  $('.main').css('display','none');
+  $('#loader-bg ,#loader').css('display','block');
 });
  
 $(window).load(function () { //全ての読み込みが完了したら実行
-  $('#loader-bg').delay(900).fadeOut(800);
-  $('#loader').delay(600).fadeOut(300);
-  $('#wrap').css('display', 'block');
+    stopload();
 });
  
 //10秒たったら強制的にロード画面を非表示
@@ -17,7 +13,25 @@ $(function(){
 });
 
 function stopload(){
-   $('#wrap').css('display','block');
-   $('#loader-bg').delay(900).fadeOut(800);
-   $('#loader').delay(600).fadeOut(300);
+    $('.main').css('display','block');
+    $('#loader-bg').delay(900).fadeOut(800, function(){
+        var box    = $("#menuWrap");
+        var boxTop = box.offset().top;
+        var targetPos = 500;
+        $(window).on('scroll touchmove', function() {
+            box.removeClass('fixed');
+            var ScrollPos = $(window).scrollTop();
+            if (ScrollPos > targetPos) {
+                box.stop();
+                box.css('display', 'none');
+                box.delay(300).addClass('fixed').fadeIn('slow');
+            } else {
+                box.css('display', 'inline');
+                box.css('opacity', 1);
+            }
+        });
+        $(window).trigger('scroll');
+    });
+    $('#loader').delay(600).fadeOut(300);
+
 }
