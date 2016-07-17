@@ -23,6 +23,7 @@ body {
     }
     input[type=submit] {
         font-weight: bold;
+        font-size: 16px;
         background-color: rgba(255, 255, 255, 0.2);
         border: 1px solid rgba(0, 0, 0, 0.6);
         @include border-radius;
@@ -447,13 +448,24 @@ body {
                 li {
                     display: none;
                 }
+                .close-button {
+                    position: absolute;
+                    background-color: #242633;
+                    width: 34px;
+                    height: 30px;
+                    color: #fff;
+                    font-size: 22px;
+                    padding-bottom: 4px;
+                    @include border-radius(6px);
+                    right: -17px;
+                    top: -18px;
+                }
                 .form-group {
                     margin-bottom: 10px;
                     label {
                         display: inline-block;
                         text-align: right;
                         width: 50px;
-                        margin-left: 30px;
                         float: left;
                         font-family: $contact_font_family;
                         line-height: 1.42857143;
