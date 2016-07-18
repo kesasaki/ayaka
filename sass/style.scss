@@ -59,7 +59,7 @@ body {
         height: 100%;
         top: 0px;
         left: 0px;
-        background: #000;
+        background: #fff;
         z-index: 1;
     }
     #loader {
@@ -72,7 +72,6 @@ body {
         margin-top: -100px;
         margin-left: -100px;
         text-align: center;
-        color: #fff;
         z-index: 2;
     }
     #alert-message {
