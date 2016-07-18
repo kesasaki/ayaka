@@ -3,13 +3,19 @@
     @content;
   }
 }
-@mixin tablet($width: 768px) {
+@mixin tablet($width: 780px) {
   @media screen and (max-width: $width) {
     @content;
   }
 }
 @mixin mobile($width: 414px) {
   @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin side-mobile($height: 414px) {
+  @media screen and (max-height: $height) {
     @content;
   }
 }

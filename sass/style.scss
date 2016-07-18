@@ -92,6 +92,9 @@ body {
         @include tablet {
             margin-top: -230px;
         }
+        @include side-mobile {
+            margin-top: -150px;
+        }
         &:after {
             content: '';
             border: 10px solid #fff;
@@ -563,6 +566,9 @@ body {
                                 margin-right: 0px;
                                 margin-left: 0px;
                             }
+                            @include side-mobile {
+                                height: 15px;
+                            }
                         }
                         textarea {
                             display: block;
@@ -590,21 +596,28 @@ body {
                                 margin-right: 0px;
                                 margin-left: 0px;
                             }
+                            @include side-mobile {
+                                height: 15px;
+                            }
                         }
                     }
                 }
                 @include border-radius;
                 @include tablet {
-                    width: 400px;
+                    width: 350px;
                     height: 355px;
-                    margin-left: -215px;
+                    margin-left: -190px;
                     margin-top: -177px;
                 }
                 @include mobile {
-                    width: 320px;
+                    width: 250px;
                     height: 355px;
-                    margin-left: -175px;
+                    margin-left: -140px;
                     margin-top: -177px;
+                }
+                @include side-mobile {
+                    height: 200px;
+                    margin-top: -100px;
                 }
             }
             .contact-button {
@@ -633,9 +646,8 @@ body {
                 }
             }
             .footer {
-                position: absolute;
-                width: 100vw;
-                bottom: 80px;
+                padding-top: 30px;
+                height: 100px;
                 text-align: center;
                 .copyright {
                     @include mobile {
