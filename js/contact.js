@@ -1,15 +1,15 @@
 (function () {
     $(function () {
         return $('.contact-form').validate({
-            highlight: function(element, errorClass) {
-                $(element).addClass(errorClass)
+            showErrors: function(errorMap, errorList) {
+                $("#alert-message").removeClass('none');
+                setTimeout(function(){
+                    $("#alert-message").addClass('none');
+                }, 5500);
             },
-            unhighlight: function(element, errorClass) {
-                $(element).removeClass(errorClass);
-            },
-            errorPlacement: function(error,element){
-                return true;
-            },
+            onfocusout: false,
+            onclick: false,
+            onkeyup: false,
             debug: true,
             submitHandler: function (e) {
                 var btn_submit, form;
@@ -38,3 +38,11 @@
         });
     });
 }.call(this));
+
+$(function(){
+    $('#contact-modal-close').on('change', function() {
+        if(this.checked) {
+            $("#alert-message").addClass('none');
+        }
+    });
+});

@@ -1,6 +1,26 @@
 @import "compass";
 @import "compass/typography/links/link-colors";
 @import "media_queries";
+@import "../modules/animate.scss/source/animate";
+
+@keyframes balloon {
+    0% {@include opacity(1);@include scale(1);}
+    5% {@include scale(1.2);}
+    10% {@include scale(1);}
+    90% {@include scale(1);}
+    95% {@include opacity(1);@include scale(1.2);}
+    100% {@include opacity(0);@include scale(0);}
+}
+
+@mixin balloon($duration, $delay, $function, $fill, $visibility) {
+    @include animation-name(balloon);
+    @include duration($duration);
+    @include delay($delay);
+    @include function($function);
+    @include fill-mode($fill);
+    @include visibility($visibility);
+}
+
 $contents_width: 400px;
 $border_color: #BBBBBB;
 $title_font_family :  'Sorts Mill Goudy', serif;
@@ -18,6 +38,9 @@ body {
     margin: 0px;
     border: 0px;
     color: $font_color;
+    .none {
+        display: none;
+    }
     input[type=reset] {
         display: none;
     }
@@ -51,6 +74,40 @@ body {
         text-align: center;
         color: #fff;
         z-index: 2;
+    }
+    #alert-message {
+        z-index: 100;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-left: -110px;
+        margin-top: -290px;
+        text-align: center;
+        width: 220px;
+        color: #a94442;
+        height: 40px;
+        background-color: #fff;
+        @include border-radius;
+        @include balloon(5s, $delay, $function, $fill, $visibility);
+        @include tablet {
+            margin-top: -230px;
+        }
+        &:after {
+            content: '';
+            border: 10px solid #fff;
+            border-right: 10px solid transparent;
+            border-left: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            position: absolute;
+            left: 100px;
+        }
+        .alert-body {
+            display: table-cell;
+            vertical-align: middle;
+            height: 40px;
+            width: 220px;
+            font-size: 14px;
+        }
     }
     .main {
         .top {
