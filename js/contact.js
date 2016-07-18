@@ -16,7 +16,7 @@
                 form = $(e);
                 btn_submit = form.find('button[type=submit]');
                 return $.ajax({
-                    url: "https://script.google.com/macros/s/AKfycbxmV5-DIf1N-U0SjG1L9ynumE1wMe4xJWiOT8pkfSpPq9UvJp4t/exec",
+                    url: "https://script.google.com/macros/s/AKfycbyCvla1iuYy1RFTqxNYfZbYZqPxWmyaZY3UM3dIUdy3qBffzSwI/exec",
                     dataType: 'jsonp',
                     data: form.serialize(),
                     beforeSend: function () {
