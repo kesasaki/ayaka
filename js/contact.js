@@ -2,10 +2,12 @@
     $(function () {
         return $('.contact-form').validate({
             showErrors: function(errorMap, errorList) {
-                $("#alert-message").removeClass('none');
-                setTimeout(function(){
-                    $("#alert-message").addClass('none');
-                }, 5500);
+                if (Object.keys(errorMap).length !== 0) {
+                    $("#alert-message").removeClass('none');
+                    setTimeout(function(){
+                        $("#alert-message").addClass('none');
+                    }, 5500);
+                }
             },
             onfocusout: false,
             onclick: false,
@@ -15,6 +17,7 @@
                 var btn_submit, form;
                 form = $(e);
                 btn_submit = form.find('button[type=submit]');
+                return true;
                 return $.ajax({
                     url: "https://script.google.com/macros/s/AKfycbyCvla1iuYy1RFTqxNYfZbYZqPxWmyaZY3UM3dIUdy3qBffzSwI/exec",
                     dataType: 'jsonp',
