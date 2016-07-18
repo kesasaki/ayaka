@@ -30,6 +30,11 @@ $font_color: #333;
 $font_size_small: 12px;
 
 body {
+    #title-name{
+        &.fadeInDown{
+            @include fadeInDown(3s, .5s, $function, $fill, $visibility);
+        }
+    }
     font-family: 'Noto Sans Japanese';
     font-size: 14px;
     @include mobile {

@@ -5558,21 +5558,54 @@ body {
   border: 0px;
   color: #333;
 }
+/* line 34, ../sass/style.scss */
+body #title-name.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -ms-animation-name: fadeInDown;
+  -o-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -ms-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -ms-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
 @media screen and (max-width: 414px) {
   /* line 32, ../sass/style.scss */
   body {
     font-size: 12px;
   }
 }
-/* line 41, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 body .none {
   display: none;
 }
-/* line 44, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 body input[type=reset] {
   display: none;
 }
-/* line 47, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 body input[type=submit] {
   font-weight: bold;
   font-size: 16px;
@@ -5583,7 +5616,7 @@ body input[type=submit] {
   border-radius: 5px;
   font-family: "Sorts Mill Goudy", serif;
 }
-/* line 55, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 body #loader-bg {
   display: none;
   position: fixed;
@@ -5594,7 +5627,7 @@ body #loader-bg {
   background: #fff;
   z-index: 1;
 }
-/* line 65, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 body #loader {
   display: none;
   position: fixed;
@@ -5607,7 +5640,7 @@ body #loader {
   text-align: center;
   z-index: 2;
 }
-/* line 77, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 body #alert-message {
   z-index: 100;
   position: fixed;
@@ -5655,18 +5688,18 @@ body #alert-message {
   backface-visibility: hidden;
 }
 @media screen and (max-width: 780px) {
-  /* line 77, ../sass/style.scss */
+  /* line 82, ../sass/style.scss */
   body #alert-message {
     margin-top: -230px;
   }
 }
 @media screen and (max-height: 414px) {
-  /* line 77, ../sass/style.scss */
+  /* line 82, ../sass/style.scss */
   body #alert-message {
     margin-top: -150px;
   }
 }
-/* line 97, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 body #alert-message:after {
   content: '';
   border: 10px solid #fff;
@@ -5676,7 +5709,7 @@ body #alert-message:after {
   position: absolute;
   left: 100px;
 }
-/* line 106, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 body #alert-message .alert-body {
   display: table-cell;
   vertical-align: middle;
@@ -5684,7 +5717,7 @@ body #alert-message .alert-body {
   width: 220px;
   font-size: 14px;
 }
-/* line 115, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 body .main .top {
   color: #ffffff;
   text-align: center;
@@ -5698,7 +5731,7 @@ body .main .top {
   background-size: cover;
   text-shadow: 0 5px 20px black;
 }
-/* line 129, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 body .main .top p {
   font-family: "Sorts Mill Goudy", serif;
   font-size: 92px;
@@ -5709,24 +5742,24 @@ body .main .top p {
   letter-spacing: 15px;
 }
 @media screen and (max-width: 414px) {
-  /* line 129, ../sass/style.scss */
+  /* line 134, ../sass/style.scss */
   body .main .top p {
     font-size: 80px;
     letter-spacing: 0px;
   }
 }
-/* line 143, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 body .main .top #menuWrap {
   width: 100%;
 }
-/* line 145, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 body .main .top #menuWrap .menu-max {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
-/* line 150, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 body .main .top #menuWrap .menu-max .menu {
   width: 90%;
   min-width: 300px;
@@ -5736,19 +5769,19 @@ body .main .top #menuWrap .menu-max .menu {
   margin-right: auto;
 }
 @media screen and (max-width: 414px) {
-  /* line 150, ../sass/style.scss */
+  /* line 155, ../sass/style.scss */
   body .main .top #menuWrap .menu-max .menu {
     width: 100%;
   }
 }
-/* line 163, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 body .main .top #menuWrap ul {
   font-family: "Sorts Mill Goudy", serif;
   padding: 0;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/* line 168, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 body .main .top #menuWrap ul li {
   display: inline-block;
   list-style-type: none;
@@ -5756,18 +5789,18 @@ body .main .top #menuWrap ul li {
   font-size: 24px;
 }
 @media screen and (max-width: 414px) {
-  /* line 168, ../sass/style.scss */
+  /* line 173, ../sass/style.scss */
   body .main .top #menuWrap ul li {
     font-size: 19px;
   }
 }
-/* line 176, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 body .main .top #menuWrap ul li a {
   color: #333;
   text-decoration: none;
   color: #ffffff;
 }
-/* line 183, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 body .main .top #menuWrap.fixed {
   position: fixed;
   left: 0px;
@@ -5779,21 +5812,21 @@ body .main .top #menuWrap.fixed {
   opacity: 0.9;
   text-shadow: none;
 }
-/* line 193, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 body .main .top #menuWrap.fixed .menu-max {
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: lightgray;
 }
-/* line 197, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 body .main .top #menuWrap.fixed .menu-max .menu {
   border-top: none;
 }
-/* line 202, ../sass/style.scss */
+/* line 207, ../sass/style.scss */
 body .main .top #menuWrap.fixed li a {
   color: #000000;
 }
-/* line 209, ../sass/style.scss */
+/* line 214, ../sass/style.scss */
 body .main .content-background {
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -5805,11 +5838,11 @@ body .main .content-background {
   background-repeat-x: no-repeat;
   background-repeat-y: inherit;
 }
-/* line 216, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 body .main .content-background .content-filter {
   background-color: rgba(255, 255, 255, 0.9);
 }
-/* line 220, ../sass/style.scss */
+/* line 225, ../sass/style.scss */
 body .main #content {
   width: 100%;
   max-width: 960px;
@@ -5818,7 +5851,7 @@ body .main #content {
   color: #4C4C4C;
   text-align: center;
 }
-/* line 224, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 body .main #content .contentField {
   width: 90%;
   max-width: 900px;
@@ -5826,23 +5859,23 @@ body .main #content .contentField {
   margin-right: auto;
   margin-left: auto;
 }
-/* line 235, ../sass/style.scss */
+/* line 240, ../sass/style.scss */
 body .main .news, body .main .profile, body .main .works, body .main .contact {
   color: #000000;
 }
-/* line 237, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 body .main .news p, body .main .profile p, body .main .works p, body .main .contact p {
   font-size: 48px;
   font-family: "Sorts Mill Goudy", serif;
 }
-/* line 243, ../sass/style.scss */
+/* line 248, ../sass/style.scss */
 body .main .news dl, body .main .profile dl, body .main .works dl, body .main .contact dl {
   text-align: left;
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #BBBBBB;
 }
-/* line 248, ../sass/style.scss */
+/* line 253, ../sass/style.scss */
 body .main .news dl dt, body .main .profile dl dt, body .main .works dl dt, body .main .contact dl dt {
   clear: left;
   float: left;
@@ -5852,17 +5885,17 @@ body .main .news dl dt, body .main .profile dl dt, body .main .works dl dt, body
   margin-top: 10px;
 }
 @media screen and (max-width: 414px) {
-  /* line 248, ../sass/style.scss */
+  /* line 253, ../sass/style.scss */
   body .main .news dl dt, body .main .profile dl dt, body .main .works dl dt, body .main .contact dl dt {
     width: 100px;
     font-size: 12px;
   }
 }
-/* line 259, ../sass/style.scss */
+/* line 264, ../sass/style.scss */
 body .main .news dl dt.first, body .main .profile dl dt.first, body .main .works dl dt.first, body .main .contact dl dt.first {
   margin-top: 0;
 }
-/* line 263, ../sass/style.scss */
+/* line 268, ../sass/style.scss */
 body .main .news dl dd, body .main .profile dl dd, body .main .works dl dd, body .main .contact dl dd {
   margin-left: 160px;
   border-top: 1px solid #BBBBBB;
@@ -5870,23 +5903,23 @@ body .main .news dl dd, body .main .profile dl dd, body .main .works dl dd, body
   margin-top: 10px;
 }
 @media screen and (max-width: 414px) {
-  /* line 263, ../sass/style.scss */
+  /* line 268, ../sass/style.scss */
   body .main .news dl dd, body .main .profile dl dd, body .main .works dl dd, body .main .contact dl dd {
     margin-left: 100px;
     font-size: 12px;
     padding-left: 0;
   }
 }
-/* line 273, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 body .main .news dl dd .category, body .main .profile dl dd .category, body .main .works dl dd .category, body .main .contact dl dd .category {
   font-weight: 600;
 }
-/* line 276, ../sass/style.scss */
+/* line 281, ../sass/style.scss */
 body .main .news dl dd .news-body, body .main .profile dl dd .news-body, body .main .works dl dd .news-body, body .main .contact dl dd .news-body {
   margin-left: 10px;
   color: gray;
 }
-/* line 285, ../sass/style.scss */
+/* line 290, ../sass/style.scss */
 body .main .profile img {
   width: auto;
   max-width: 300px;
@@ -5894,42 +5927,42 @@ body .main .profile img {
   border-radius: 10px;
 }
 @media screen and (max-width: 780px) {
-  /* line 285, ../sass/style.scss */
+  /* line 290, ../sass/style.scss */
   body .main .profile img {
     max-width: 200px;
   }
 }
 @media screen and (max-width: 414px) {
-  /* line 285, ../sass/style.scss */
+  /* line 290, ../sass/style.scss */
   body .main .profile img {
     max-width: 150px;
   }
 }
-/* line 297, ../sass/style.scss */
+/* line 302, ../sass/style.scss */
 body .main .profile .activityName {
   padding-bottom: 30px;
   font-size: 24px;
   text-align: center;
 }
-/* line 302, ../sass/style.scss */
+/* line 307, ../sass/style.scss */
 body .main .profile .description {
   line-height: 1.6em;
   width: 500px;
   margin: auto;
 }
 @media screen and (max-width: 780px) {
-  /* line 302, ../sass/style.scss */
+  /* line 307, ../sass/style.scss */
   body .main .profile .description {
     width: 400px;
   }
 }
 @media screen and (max-width: 414px) {
-  /* line 302, ../sass/style.scss */
+  /* line 307, ../sass/style.scss */
   body .main .profile .description {
     width: 300px;
   }
 }
-/* line 312, ../sass/style.scss */
+/* line 317, ../sass/style.scss */
 body .main .profile .description .description-year {
   vertical-align: top;
   width: 100px;
@@ -5937,12 +5970,12 @@ body .main .profile .description .description-year {
   text-align: right;
 }
 @media screen and (max-width: 780px) {
-  /* line 312, ../sass/style.scss */
+  /* line 317, ../sass/style.scss */
   body .main .profile .description .description-year {
     width: 70px;
   }
 }
-/* line 321, ../sass/style.scss */
+/* line 326, ../sass/style.scss */
 body .main .profile .description .description-body {
   width: 380px;
   margin-left: 15px;
@@ -5950,36 +5983,36 @@ body .main .profile .description .description-body {
   text-align: left;
 }
 @media screen and (max-width: 780px) {
-  /* line 321, ../sass/style.scss */
+  /* line 326, ../sass/style.scss */
   body .main .profile .description .description-body {
     width: 315px;
     margin-left: 10px;
   }
 }
 @media screen and (max-width: 414px) {
-  /* line 321, ../sass/style.scss */
+  /* line 326, ../sass/style.scss */
   body .main .profile .description .description-body {
     width: 215px;
   }
 }
-/* line 339, ../sass/style.scss */
+/* line 344, ../sass/style.scss */
 body .main .works ul {
   list-style: none;
   padding-left: 0px;
   border-bottom: 1px solid #BBBBBB;
 }
-/* line 343, ../sass/style.scss */
+/* line 348, ../sass/style.scss */
 body .main .works ul li {
   width: 100%;
   border-top: 1px solid #BBBBBB;
 }
-/* line 348, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 body .main .works dl {
   padding: 0px;
   margin: 10px 0 10px 0;
   border-bottom: 0px solid #BBBBBB;
 }
-/* line 352, ../sass/style.scss */
+/* line 357, ../sass/style.scss */
 body .main .works dl dt {
   width: 60px;
   border-top: 0px solid #BBBBBB;
@@ -5993,24 +6026,24 @@ body .main .works dl dt {
   text-align: center;
   font-size: 12px;
 }
-/* line 362, ../sass/style.scss */
+/* line 367, ../sass/style.scss */
 body .main .works dl dt.music {
   background-color: #00cc11;
 }
-/* line 365, ../sass/style.scss */
+/* line 370, ../sass/style.scss */
 body .main .works dl dt.video {
   background-color: #e52d27;
 }
-/* line 368, ../sass/style.scss */
+/* line 373, ../sass/style.scss */
 body .main .works dl dt.sound {
   background-color: #00aabb;
 }
-/* line 372, ../sass/style.scss */
+/* line 377, ../sass/style.scss */
 body .main .works dl dd {
   margin: 0 0 0 0;
   vertical-align: top;
 }
-/* line 375, ../sass/style.scss */
+/* line 380, ../sass/style.scss */
 body .main .works dl dd.contents {
   border-top: inherit;
   display: inline-block;
@@ -6018,42 +6051,42 @@ body .main .works dl dd.contents {
   max-width: 300px;
 }
 @media screen and (max-width: 780px) {
-  /* line 375, ../sass/style.scss */
+  /* line 380, ../sass/style.scss */
   body .main .works dl dd.contents {
     width: 49%;
     max-width: 100%;
   }
 }
 @media screen and (max-width: 414px) {
-  /* line 375, ../sass/style.scss */
+  /* line 380, ../sass/style.scss */
   body .main .works dl dd.contents {
     width: 100%;
     max-width: 100%;
   }
 }
 @media screen and (max-width: 780px) {
-  /* line 388, ../sass/style.scss */
+  /* line 393, ../sass/style.scss */
   body .main .works dl dd.contents.music {
     width: inherit;
     max-width: inherit;
   }
 }
-/* line 394, ../sass/style.scss */
+/* line 399, ../sass/style.scss */
 body .main .works dl dd.contents img {
   width: 100px;
 }
 @media screen and (min-width: 769px) {
-  /* line 394, ../sass/style.scss */
+  /* line 399, ../sass/style.scss */
   body .main .works dl dd.contents img {
     width: 150px;
   }
 }
-/* line 400, ../sass/style.scss */
+/* line 405, ../sass/style.scss */
 body .main .works dl dd.contents iframe {
   width: 100%;
   height: 100px;
 }
-/* line 404, ../sass/style.scss */
+/* line 409, ../sass/style.scss */
 body .main .works dl dd.contents .movie-wrap {
   position: relative;
   padding-bottom: 56.25%;
@@ -6061,7 +6094,7 @@ body .main .works dl dd.contents .movie-wrap {
   height: 0;
   overflow: hidden;
 }
-/* line 410, ../sass/style.scss */
+/* line 415, ../sass/style.scss */
 body .main .works dl dd.contents .movie-wrap iframe {
   position: absolute;
   top: 0;
@@ -6069,95 +6102,95 @@ body .main .works dl dd.contents .movie-wrap iframe {
   width: 100%;
   height: 100%;
 }
-/* line 419, ../sass/style.scss */
+/* line 424, ../sass/style.scss */
 body .main .works dl dd.description {
   border-top: inherit;
   display: inline-block;
 }
-/* line 422, ../sass/style.scss */
+/* line 427, ../sass/style.scss */
 body .main .works dl dd.description .description-wrapper {
   margin-left: 10px;
 }
-/* line 424, ../sass/style.scss */
+/* line 429, ../sass/style.scss */
 body .main .works dl dd.description .description-wrapper .description-date {
   font-weight: 400;
 }
-/* line 427, ../sass/style.scss */
+/* line 432, ../sass/style.scss */
 body .main .works dl dd.description .description-wrapper .description-title {
   font-weight: 600;
 }
-/* line 430, ../sass/style.scss */
+/* line 435, ../sass/style.scss */
 body .main .works dl dd.description .description-wrapper .description-body {
   margin-left: 10px;
   color: gray;
 }
 @media screen and (max-width: 414px) {
-  /* line 430, ../sass/style.scss */
+  /* line 435, ../sass/style.scss */
   body .main .works dl dd.description .description-wrapper .description-body {
     font-size: 12px;
   }
 }
 @media screen and (max-width: 414px) {
-  /* line 422, ../sass/style.scss */
+  /* line 427, ../sass/style.scss */
   body .main .works dl dd.description .description-wrapper {
     margin-left: 0px;
   }
 }
 @media screen and (max-width: 780px) {
-  /* line 419, ../sass/style.scss */
+  /* line 424, ../sass/style.scss */
   body .main .works dl dd.description {
     width: 49%;
   }
-  /* line 443, ../sass/style.scss */
+  /* line 448, ../sass/style.scss */
   body .main .works dl dd.description.music {
     width: inherit;
   }
 }
 @media screen and (max-width: 414px) {
-  /* line 419, ../sass/style.scss */
+  /* line 424, ../sass/style.scss */
   body .main .works dl dd.description {
     margin-top: 10px;
   }
 }
 @media screen and (max-width: 414px) {
-  /* line 450, ../sass/style.scss */
+  /* line 455, ../sass/style.scss */
   body .main .works dl dd.description .pc-only {
     display: none;
   }
 }
-/* line 459, ../sass/style.scss */
+/* line 464, ../sass/style.scss */
 body .main .contact {
   text-align: center;
   height: 100vh;
   position: relative;
 }
-/* line 464, ../sass/style.scss */
+/* line 469, ../sass/style.scss */
 body .main .contact ul {
   display: inline-block;
   *display: inline;
   *zoom: 1;
 }
-/* line 468, ../sass/style.scss */
+/* line 473, ../sass/style.scss */
 body .main .contact ul li {
   text-align: left;
 }
-/* line 472, ../sass/style.scss */
+/* line 477, ../sass/style.scss */
 body .main .contact .contact-wrapper {
   margin-top: 20px;
 }
-/* line 475, ../sass/style.scss */
+/* line 480, ../sass/style.scss */
 body .main .contact input[name=contact-modal-radio] {
   display: none;
 }
-/* line 478, ../sass/style.scss */
+/* line 483, ../sass/style.scss */
 body .main .contact .contact-modal-open:checked ~ .contact-modal-closer {
   display: block;
 }
-/* line 481, ../sass/style.scss */
+/* line 486, ../sass/style.scss */
 body .main .contact .contact-modal-open:checked ~ .contact-modal {
   display: block;
 }
-/* line 484, ../sass/style.scss */
+/* line 489, ../sass/style.scss */
 body .main .contact .contact-modal-closer {
   display: none;
   position: fixed;
@@ -6169,7 +6202,7 @@ body .main .contact .contact-modal-closer {
   background-color: #000;
   z-index: 99;
 }
-/* line 495, ../sass/style.scss */
+/* line 500, ../sass/style.scss */
 body .main .contact .contact-modal {
   display: none;
   position: fixed;
@@ -6186,11 +6219,11 @@ body .main .contact .contact-modal {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 507, ../sass/style.scss */
+/* line 512, ../sass/style.scss */
 body .main .contact .contact-modal li {
   display: none;
 }
-/* line 510, ../sass/style.scss */
+/* line 515, ../sass/style.scss */
 body .main .contact .contact-modal .close-button {
   position: absolute;
   background-color: #242633;
@@ -6205,11 +6238,11 @@ body .main .contact .contact-modal .close-button {
   right: -17px;
   top: -18px;
 }
-/* line 522, ../sass/style.scss */
+/* line 527, ../sass/style.scss */
 body .main .contact .contact-modal .form-group {
   margin-bottom: 10px;
 }
-/* line 524, ../sass/style.scss */
+/* line 529, ../sass/style.scss */
 body .main .contact .contact-modal .form-group label {
   display: inline-block;
   text-align: right;
@@ -6220,25 +6253,25 @@ body .main .contact .contact-modal .form-group label {
   font-weight: 700;
 }
 @media screen and (max-width: 780px) {
-  /* line 524, ../sass/style.scss */
+  /* line 529, ../sass/style.scss */
   body .main .contact .contact-modal .form-group label {
     width: 100%;
     text-align: left;
     margin-left: 0px;
   }
 }
-/* line 538, ../sass/style.scss */
+/* line 543, ../sass/style.scss */
 body .main .contact .contact-modal .form-group div {
   display: inline-block;
   width: 450px;
 }
 @media screen and (max-width: 780px) {
-  /* line 538, ../sass/style.scss */
+  /* line 543, ../sass/style.scss */
   body .main .contact .contact-modal .form-group div {
     width: 100%;
   }
 }
-/* line 544, ../sass/style.scss */
+/* line 549, ../sass/style.scss */
 body .main .contact .contact-modal .form-group div input {
   display: block;
   width: 399px;
@@ -6262,12 +6295,12 @@ body .main .contact .contact-modal .form-group div input {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 559, ../sass/style.scss */
+/* line 564, ../sass/style.scss */
 body .main .contact .contact-modal .form-group div input.error {
   border: 1px solid #e6846e;
 }
 @media screen and (max-width: 780px) {
-  /* line 544, ../sass/style.scss */
+  /* line 549, ../sass/style.scss */
   body .main .contact .contact-modal .form-group div input {
     display: inherit;
     width: 90%;
@@ -6276,12 +6309,12 @@ body .main .contact .contact-modal .form-group div input.error {
   }
 }
 @media screen and (max-height: 414px) {
-  /* line 544, ../sass/style.scss */
+  /* line 549, ../sass/style.scss */
   body .main .contact .contact-modal .form-group div input {
     height: 15px;
   }
 }
-/* line 572, ../sass/style.scss */
+/* line 577, ../sass/style.scss */
 body .main .contact .contact-modal .form-group div textarea {
   display: block;
   width: 399px;
@@ -6306,12 +6339,12 @@ body .main .contact .contact-modal .form-group div textarea {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 588, ../sass/style.scss */
+/* line 593, ../sass/style.scss */
 body .main .contact .contact-modal .form-group div textarea.error {
   border: 1px solid #e6846e;
 }
 @media screen and (max-width: 780px) {
-  /* line 572, ../sass/style.scss */
+  /* line 577, ../sass/style.scss */
   body .main .contact .contact-modal .form-group div textarea {
     display: inherit;
     width: 90%;
@@ -6321,13 +6354,13 @@ body .main .contact .contact-modal .form-group div textarea.error {
   }
 }
 @media screen and (max-height: 414px) {
-  /* line 572, ../sass/style.scss */
+  /* line 577, ../sass/style.scss */
   body .main .contact .contact-modal .form-group div textarea {
     height: 15px;
   }
 }
 @media screen and (max-width: 780px) {
-  /* line 495, ../sass/style.scss */
+  /* line 500, ../sass/style.scss */
   body .main .contact .contact-modal {
     width: 350px;
     height: 355px;
@@ -6336,7 +6369,7 @@ body .main .contact .contact-modal .form-group div textarea.error {
   }
 }
 @media screen and (max-width: 414px) {
-  /* line 495, ../sass/style.scss */
+  /* line 500, ../sass/style.scss */
   body .main .contact .contact-modal {
     width: 250px;
     height: 355px;
@@ -6345,13 +6378,13 @@ body .main .contact .contact-modal .form-group div textarea.error {
   }
 }
 @media screen and (max-height: 414px) {
-  /* line 495, ../sass/style.scss */
+  /* line 500, ../sass/style.scss */
   body .main .contact .contact-modal {
     height: 200px;
     margin-top: -100px;
   }
 }
-/* line 622, ../sass/style.scss */
+/* line 627, ../sass/style.scss */
 body .main .contact .contact-button {
   font-size: 1.4em;
   font-weight: bold;
@@ -6361,41 +6394,41 @@ body .main .contact .contact-button {
   border-radius: 10px;
   font-family: "Sorts Mill Goudy", serif;
 }
-/* line 630, ../sass/style.scss */
+/* line 635, ../sass/style.scss */
 body .main .contact .contact-button:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 769px) {
-  /* line 634, ../sass/style.scss */
+  /* line 639, ../sass/style.scss */
   body .main .contact .help-mail {
     margin-top: 20px;
     font-size: small;
   }
-  /* line 638, ../sass/style.scss */
+  /* line 643, ../sass/style.scss */
   body .main .contact .help-mail a {
     color: gray;
     text-decoration: none;
   }
 }
 @media screen and (max-width: 414px) {
-  /* line 634, ../sass/style.scss */
+  /* line 639, ../sass/style.scss */
   body .main .contact .help-mail {
     display: none;
   }
 }
-/* line 647, ../sass/style.scss */
+/* line 652, ../sass/style.scss */
 body .main .contact .footer {
   padding-top: 30px;
   height: 100px;
   text-align: center;
 }
 @media screen and (max-width: 414px) {
-  /* line 651, ../sass/style.scss */
+  /* line 656, ../sass/style.scss */
   body .main .contact .footer .copyright {
     font-size: 12px;
   }
 }
-/* line 658, ../sass/style.scss */
+/* line 663, ../sass/style.scss */
 body .main .box {
   width: 100vw;
   height: 100vh;
@@ -6404,7 +6437,7 @@ body .main .box {
   justify-content: center;
   flex-direction: column;
 }
-/* line 666, ../sass/style.scss */
+/* line 671, ../sass/style.scss */
 body .main .without-box {
   padding-top: 20px;
 }

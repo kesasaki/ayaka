@@ -21,11 +21,15 @@ function stopload(){
         $(window).on('scroll touchmove', function() {
             box.removeClass('fixed');
             var ScrollPos = $(window).scrollTop();
+            box.dequeue();
             if (ScrollPos > targetPos) {
                 box.stop();
                 box.css('display', 'none');
-                box.delay(300).addClass('fixed').fadeIn('slow');
+                box.delay(300).queue(function() {
+                    $(this).addClass('fadeIn').addClass('fixed').show().dequeue();
+                });
             } else {
+                box.removeClass('fadeIn');
                 box.css('display', 'inline');
                 box.css('opacity', 1);
             }
@@ -33,5 +37,5 @@ function stopload(){
         $(window).trigger('scroll');
     });
     $('#loader').delay(600).fadeOut(300);
-
+    $('#title-name').delay(1000).removeClass('none');
 }
