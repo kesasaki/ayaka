@@ -39,3 +39,24 @@ function stopload(){
     $('#loader').delay(600).fadeOut(300);
     $('#title-name').delay(1000).removeClass('none');
 }
+
+$(function(){
+  $('.effect').css("opacity","0");
+  $(window).scroll(function (){
+    $(".effect").each(function(){
+      var imgPos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+        var inClass= $(this).attr('data-in-class')
+        var outClass= $(this).attr('data-out-class')
+      if (scroll > imgPos - windowHeight + windowHeight/5){
+        $(this).addClass(inClass).removeClass(outClass);
+        $(this).css("opacity","1" );
+      } else {
+        $(this).addClass(outClass).removeClass(inClass);
+        $(this).css("opacity","0" );
+      }
+    });
+  });
+});
+
