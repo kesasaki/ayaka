@@ -6185,9 +6185,39 @@ body .main .contact .contact-modal-open:checked ~ .contact-modal-closer {
 }
 /* line 480, ../sass/style.scss */
 body .main .contact .contact-modal-open:checked ~ .contact-modal {
+  -webkit-animation-name: bounceIn;
+  -moz-animation-name: bounceIn;
+  -ms-animation-name: bounceIn;
+  -o-animation-name: bounceIn;
+  animation-name: bounceIn;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
   display: block;
 }
-/* line 483, ../sass/style.scss */
+/* line 484, ../sass/style.scss */
 body .main .contact .contact-modal-closer {
   display: none;
   position: fixed;
@@ -6199,7 +6229,7 @@ body .main .contact .contact-modal-closer {
   background-color: #000;
   z-index: 99;
 }
-/* line 494, ../sass/style.scss */
+/* line 495, ../sass/style.scss */
 body .main .contact .contact-modal {
   display: none;
   position: fixed;
@@ -6216,11 +6246,11 @@ body .main .contact .contact-modal {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 506, ../sass/style.scss */
+/* line 507, ../sass/style.scss */
 body .main .contact .contact-modal li {
   display: none;
 }
-/* line 509, ../sass/style.scss */
+/* line 510, ../sass/style.scss */
 body .main .contact .contact-modal .close-button {
   position: absolute;
   background-color: #242633;
@@ -6235,11 +6265,11 @@ body .main .contact .contact-modal .close-button {
   right: -17px;
   top: -18px;
 }
-/* line 521, ../sass/style.scss */
+/* line 522, ../sass/style.scss */
 body .main .contact .contact-modal .form-group {
   margin-bottom: 10px;
 }
-/* line 523, ../sass/style.scss */
+/* line 524, ../sass/style.scss */
 body .main .contact .contact-modal .form-group label {
   display: inline-block;
   text-align: right;
@@ -6250,25 +6280,25 @@ body .main .contact .contact-modal .form-group label {
   font-weight: 700;
 }
 @media screen and (max-width: 780px) {
-  /* line 523, ../sass/style.scss */
+  /* line 524, ../sass/style.scss */
   body .main .contact .contact-modal .form-group label {
     width: 100%;
     text-align: left;
     margin-left: 0px;
   }
 }
-/* line 537, ../sass/style.scss */
+/* line 538, ../sass/style.scss */
 body .main .contact .contact-modal .form-group div {
   display: inline-block;
   width: 450px;
 }
 @media screen and (max-width: 780px) {
-  /* line 537, ../sass/style.scss */
+  /* line 538, ../sass/style.scss */
   body .main .contact .contact-modal .form-group div {
     width: 100%;
   }
 }
-/* line 543, ../sass/style.scss */
+/* line 544, ../sass/style.scss */
 body .main .contact .contact-modal .form-group div input {
   display: block;
   width: 399px;
@@ -6292,12 +6322,12 @@ body .main .contact .contact-modal .form-group div input {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 558, ../sass/style.scss */
+/* line 559, ../sass/style.scss */
 body .main .contact .contact-modal .form-group div input.error {
   border: 1px solid #e6846e;
 }
 @media screen and (max-width: 780px) {
-  /* line 543, ../sass/style.scss */
+  /* line 544, ../sass/style.scss */
   body .main .contact .contact-modal .form-group div input {
     display: inherit;
     width: 90%;
@@ -6306,12 +6336,12 @@ body .main .contact .contact-modal .form-group div input.error {
   }
 }
 @media screen and (max-height: 414px) {
-  /* line 543, ../sass/style.scss */
+  /* line 544, ../sass/style.scss */
   body .main .contact .contact-modal .form-group div input {
     height: 15px;
   }
 }
-/* line 571, ../sass/style.scss */
+/* line 572, ../sass/style.scss */
 body .main .contact .contact-modal .form-group div textarea {
   display: block;
   width: 399px;
@@ -6336,12 +6366,12 @@ body .main .contact .contact-modal .form-group div textarea {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 587, ../sass/style.scss */
+/* line 588, ../sass/style.scss */
 body .main .contact .contact-modal .form-group div textarea.error {
   border: 1px solid #e6846e;
 }
 @media screen and (max-width: 780px) {
-  /* line 571, ../sass/style.scss */
+  /* line 572, ../sass/style.scss */
   body .main .contact .contact-modal .form-group div textarea {
     display: inherit;
     width: 90%;
@@ -6351,13 +6381,13 @@ body .main .contact .contact-modal .form-group div textarea.error {
   }
 }
 @media screen and (max-height: 414px) {
-  /* line 571, ../sass/style.scss */
+  /* line 572, ../sass/style.scss */
   body .main .contact .contact-modal .form-group div textarea {
     height: 15px;
   }
 }
 @media screen and (max-width: 780px) {
-  /* line 494, ../sass/style.scss */
+  /* line 495, ../sass/style.scss */
   body .main .contact .contact-modal {
     width: 350px;
     height: 355px;
@@ -6366,7 +6396,7 @@ body .main .contact .contact-modal .form-group div textarea.error {
   }
 }
 @media screen and (max-width: 414px) {
-  /* line 494, ../sass/style.scss */
+  /* line 495, ../sass/style.scss */
   body .main .contact .contact-modal {
     width: 250px;
     height: 355px;
@@ -6375,13 +6405,13 @@ body .main .contact .contact-modal .form-group div textarea.error {
   }
 }
 @media screen and (max-height: 414px) {
-  /* line 494, ../sass/style.scss */
+  /* line 495, ../sass/style.scss */
   body .main .contact .contact-modal {
     height: 200px;
     margin-top: -100px;
   }
 }
-/* line 621, ../sass/style.scss */
+/* line 622, ../sass/style.scss */
 body .main .contact .contact-button {
   font-size: 1.4em;
   font-weight: bold;
@@ -6391,41 +6421,41 @@ body .main .contact .contact-button {
   border-radius: 10px;
   font-family: "Sorts Mill Goudy", serif;
 }
-/* line 629, ../sass/style.scss */
+/* line 630, ../sass/style.scss */
 body .main .contact .contact-button:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 769px) {
-  /* line 633, ../sass/style.scss */
+  /* line 634, ../sass/style.scss */
   body .main .contact .help-mail {
     margin-top: 20px;
     font-size: small;
   }
-  /* line 637, ../sass/style.scss */
+  /* line 638, ../sass/style.scss */
   body .main .contact .help-mail a {
     color: gray;
     text-decoration: none;
   }
 }
 @media screen and (max-width: 414px) {
-  /* line 633, ../sass/style.scss */
+  /* line 634, ../sass/style.scss */
   body .main .contact .help-mail {
     display: none;
   }
 }
-/* line 646, ../sass/style.scss */
+/* line 647, ../sass/style.scss */
 body .main .contact .footer {
   padding-top: 30px;
   height: 100px;
   text-align: center;
 }
 @media screen and (max-width: 414px) {
-  /* line 650, ../sass/style.scss */
+  /* line 651, ../sass/style.scss */
   body .main .contact .footer .copyright {
     font-size: 12px;
   }
 }
-/* line 657, ../sass/style.scss */
+/* line 658, ../sass/style.scss */
 body .main .box {
   width: 100vw;
   height: 100vh;
@@ -6434,12 +6464,12 @@ body .main .box {
   justify-content: center;
   flex-direction: column;
 }
-/* line 665, ../sass/style.scss */
+/* line 666, ../sass/style.scss */
 body .main .sector-title {
   font-size: 48px;
   font-family: "Sorts Mill Goudy", serif;
 }
-/* line 669, ../sass/style.scss */
+/* line 670, ../sass/style.scss */
 body .main .without-box {
   padding-top: 70px;
 }

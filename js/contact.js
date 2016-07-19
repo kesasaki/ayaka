@@ -3,10 +3,12 @@
         return $('.contact-form').validate({
             showErrors: function(errorMap, errorList) {
                 if (Object.keys(errorMap).length !== 0) {
-                    $("#alert-message").removeClass('none');
-                    setTimeout(function(){
-                        $("#alert-message").addClass('none');
-                    }, 5500);
+                    if ($("#alert-message").hasClass('none')) {
+                        $("#alert-message").removeClass('none');
+                        setTimeout(function(){
+                            $("#alert-message").addClass('none');
+                        }, 5500);
+                    }
                 }
             },
             onfocusout: false,

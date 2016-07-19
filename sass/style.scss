@@ -478,6 +478,7 @@ body {
                 display: block;
             }
             .contact-modal-open:checked ~ .contact-modal {
+                @include bounceIn($duration, $delay, $function, $fill, $visibility);
                 display: block;
             }
             .contact-modal-closer {
