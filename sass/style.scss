@@ -239,24 +239,22 @@ body {
         }
         .news {
             color: #000000;
-            p {
-                font-size: 48px;
-                font-family: $title_font_family;
-            }
-
             // 新着の表
+            ul {
+                list-style: none;
+                padding-left: 0px;
+                border-bottom: 1px solid $border_color;
+                li {
+                    width: 100%;
+                    border-top:    1px solid $border_color;
+                }
+            }
             dl {
                 text-align: left;
-                padding-bottom: 10px;
-                margin-bottom: 10px;
-                border-bottom: 1px solid $border_color;
                 dt {
                     clear: left;
                     float: left;
                     width: 160px;
-                    border-top: 1px solid $border_color;
-                    padding-top: 10px;
-                    margin-top: 10px;
                     @include mobile {
                         width: 100px;
                         font-size: $font_size_small;
@@ -272,9 +270,6 @@ body {
                         font-size: $font_size_small;
                         padding-left: 0;
                     }
-                    border-top: 1px solid $border_color;
-                    padding-top: 10px;
-                    margin-top: 10px;
                     .category {
                         font-weight: 600;
                     }
@@ -668,8 +663,12 @@ body {
             justify-content: center;
             flex-direction: column;
         }
+        .sector-title {
+            font-size: 48px;
+            font-family: $title_font_family;
+        }
         .without-box {
-            padding-top: 20px;
+            padding-top: 70px;
         }
     }
 }

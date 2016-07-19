@@ -15,6 +15,7 @@
     <script src="./js/loading.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/contact.js"></script>
+    <script src="./js/animation.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -56,8 +57,8 @@ What's New ↓↓
 
 -->
               <div class="without-box news" id="news">
-                <p>What's New</p>
-                <dl>
+                <div class="effect sector-title" data-in-class="fadeInDown", data-out-class="fadeOutUp">What's New</div>
+                <ul>
 <!--
 
 この階層にニュースを追加してください
@@ -73,61 +74,89 @@ What's New ↓↓
 ・ニュース数に上限はありませんが、基本的には上に1つ追加したら一番下のニュースを消してください
 
 -->
-                  <dt class="first">2016.8. </dt>
-                  <dd>
-                    <div class="category">LIVE</div>
-                    <div class="news-body">
-                      AyakaSamano 1stReleaseLive<br>
-                      詳細は随時更新致します
-                    </div>
-                  </dd>
-                  <dt>2016.7.</dt>
-                  <dd>
-                    <div class="category">RELEASE</div>
-                    <div class="news-body">
-                      1st Mini Album<br>『S/-ity』
-                    </div>
-                  </dd>
-                  <dt>2016.7.</dt>
-                  <dd>
-                    <div class="category">PV</div>
-                    <div class="news-body">
-                      PV『Stage』
-                    </div>
-                  </dd>
-                  <dt>2016.2.28</dt>
-                  <dd>
-                    <div class="category">LIVE</div>
-                    <div class="news-body">
-                      「THE ANISON M@STER 12th」<br>
-                      栄 TITE ROPE<br>16:30open 17:00start</div>
-                  </dd>
-                  <dt>2016.5.2</dt>
-                  <dd>
-                    <div class="category">LIVE</div>
-                    <div class="news-body">
-                      「Live Size vol.3」<br>
-                      上前津スナフキンベース<br>
-                      18:00 Start
-                    </div>
-                  </dd>
-                  <dt>2015.6.13-14</dt>
-                  <dd>
-                    <div class="category">OFFER</div>
-                    <div class="news-body">
-                      劇団粋んぐH"igh 第4回公演「馬鹿莫迦ばか」<br>
-                      ED『stage』
-                    </div>
-                  </dd>
-                  <dt>2015.6.10-14</dt>
-                  <dd>
-                    <div class="category">OFFER</div>
-                    <div class="news-body">
-                      虹創旅団 2015年夏公演「WonderLast」<br>
-                      劇中曲『32bitの涙、そして新しい世界』
-                    </div>
-                  </dd>
-                </dl>
+                  <li class="effect" data-in-class="fadeInLeft", data-out-class="fadeOutRight">
+                    <dl>
+                      <dt class="first">2016.8. </dt>
+                      <dd>
+                        <div class="category">LIVE</div>
+                        <div class="news-body">
+                          AyakaSamano 1stReleaseLive<br>
+                          詳細は随時更新致します
+                        </div>
+                      </dd>
+                    </dl>
+                  </li>
+                  <li class="effect" data-in-class="fadeInLeft", data-out-class="fadeOutRight">
+                    <dl>
+                      <dt>2016.7.</dt>
+                      <dd>
+                        <div class="category">RELEASE</div>
+                        <div class="news-body">
+                          1st Mini Album<br>『S/-ity』
+                        </div>
+                      </dd>
+                    </dl>
+                  </li>
+                  <li class="effect" data-in-class="fadeInLeft", data-out-class="fadeOutRight">
+                    <dl>
+                      <dt>2016.7.</dt>
+                      <dd>
+                        <div class="category">PV</div>
+                        <div class="news-body">
+                          PV『Stage』
+                        </div>
+                      </dd>
+                    </dl>
+                  </li>
+                  <li class="effect" data-in-class="fadeInLeft", data-out-class="fadeOutRight">
+                    <dl>
+                      <dt>2016.2.28</dt>
+                      <dd>
+                        <div class="category">LIVE</div>
+                        <div class="news-body">
+                          「THE ANISON M@STER 12th」<br>
+                          栄 TITE ROPE<br>16:30open 17:00start</div>
+                      </dd>
+                    </dl>
+                  </li>
+                  <li class="effect" data-in-class="fadeInLeft", data-out-class="fadeOutRight">
+                    <dl>
+                      <dt>2016.5.2</dt>
+                      <dd>
+                        <div class="category">LIVE</div>
+                        <div class="news-body">
+                          「Live Size vol.3」<br>
+                          上前津スナフキンベース<br>
+                          18:00 Start
+                        </div>
+                      </dd>
+                    </dl>
+                  </li>
+                  <li class="effect" data-in-class="fadeInLeft", data-out-class="fadeOutRight">
+                    <dl>
+                      <dt>2015.6.13-14</dt>
+                      <dd>
+                        <div class="category">OFFER</div>
+                        <div class="news-body">
+                          劇団粋んぐH"igh 第4回公演「馬鹿莫迦ばか」<br>
+                          ED『stage』
+                        </div>
+                      </dd>
+                    </dl>
+                  </li>
+                  <li class="effect" data-in-class="fadeInLeft", data-out-class="fadeOutRight">
+                    <dl>
+                      <dt>2015.6.10-14</dt>
+                      <dd>
+                        <div class="category">OFFER</div>
+                        <div class="news-body">
+                          虹創旅団 2015年夏公演「WonderLast」<br>
+                          劇中曲『32bitの涙、そして新しい世界』
+                        </div>
+                      </dd>
+                    </dl>
+                  </li>
+                </ul>
               </div>
 <!--
 
@@ -135,10 +164,10 @@ What's New ↑↑
 
 -->
               <div class="without-box profile" id="profile">
-                <p>Profile</p>
-                <img src="image/profile.png">
-                <div class="activityName">佐間野絢佳 (Ayaka Samano)</div>
-                <div class="description">
+                <div class="effect sector-title" data-in-class="fadeInDown", data-out-class="fadeOutUp">Profile</div>
+                <img class="effect" src="image/profile.png" data-in-class="flipInY" data-out-class="flipOutY" />
+                <div class="description effect" data-in-class="flipInY" data-out-class="flipOutY">
+                  <div class="activityName">佐間野絢佳 (Ayaka Samano)</div>
                   <div class="description-detail">
                     <div class="description-year">1991年</div>
                     <div class="description-body">愛知県一宮市に生まれる</div>
@@ -167,7 +196,7 @@ Works ↓↓
 
 -->
               <div class="without-box works" id="works">
-                <p>Works</p>
+                <div class="effect sector-title" data-in-class="fadeInDown", data-out-class="fadeOutUp">Works</div>
                 <ul>
 <!--
 
@@ -345,47 +374,49 @@ Works ↑↑
 
 -->
           <div class="without-box contact" id="contact">
-            <p>Contact</p>
-            <div class="description">
-                お問い合わせは以下のボタンからどうぞ
-            </div>
-            <ul>
-              <li>作曲のご依頼</li>
-              <li>ご意見／ご要望</li>
-              <li>その他のお問い合わせ等</li>
-            </ul>
-            <div class="contact-wrapper">
-              <input type="radio" id="contact-modal-close" name="contact-modal-radio">
-              <input type="radio" id="contact-modal-open" class="contact-modal-open" name="contact-modal-radio">
-              <label class="contact-modal-closer" for="contact-modal-close"></label>
-              <div class="contact-modal">
-                <label class="button close-button" for="contact-modal-close">×</label>
-                <form class="contact-form">
-                  <div class="form-group">
-                    <label class="">From</label>
-                    <div class="">
-                      <input class="form-control" name="mail" placeholder="example@example.com" type="email" required />
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="">Title</label>
-                    <div class="">
-                      <input class="form-control" name="title" placeholder="【作曲依頼／ご意見／お問い合わせ】概略" type="text" required />
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="">Body</label>
-                    <div class="">
-                      <textarea class="form-control" name="body" placeholder="こちらのページをご覧頂き、誠にありがとうございます。&#13;&#10;&#13;&#10;お手数ですが、以下の項目をご記入ください。&#13;&#10;&#13;&#10;-*-*-*-&#13;&#10;&#13;&#10;お名前：&#13;&#10;&#13;&#10;ご連絡先：&#13;&#10;&#13;&#10;ご用件&#13;&#10;（出来るだけ具体的にご記入頂けると助かります。）&#13;&#10;&#13;&#10;&#13;&#10;-*-*-*&#13;&#10;&#13;&#10;ご連絡に時間を要する場合がございますが、ご了承ください。&#13;&#10;確認、検討の上お返事させて頂きます。&#13;&#10;よろしくお願いします。&#13;&#10;&#13;&#10;佐間野絢佳"required></textarea>
-                    </div>
-                  </div>
-                  <div class="">
-                    <input class="contact-reset" type="reset" />
-                    <input class="contact-submit" type="submit" value="Submit"/>
-                  </div>
-                </form>
+            <div class="effect sector-title" data-in-class="fadeInDown", data-out-class="fadeOutUp">Contact</div>
+            <div class="effect" data-in-class="flipInY" data-out-class="flipOutY">
+              <div class="description">
+                  お問い合わせは以下のボタンからどうぞ
               </div>
-              <label class="contact-button" for="contact-modal-open">CONTACT US</label>
+              <ul>
+                <li>作曲のご依頼</li>
+                <li>ご意見／ご要望</li>
+                <li>その他のお問い合わせ等</li>
+              </ul>
+              <div class="contact-wrapper">
+                <label class="contact-button" for="contact-modal-open">CONTACT US</label>
+              </div>
+            </div>
+            <input type="radio" id="contact-modal-close" name="contact-modal-radio">
+            <input type="radio" id="contact-modal-open" class="contact-modal-open" name="contact-modal-radio">
+            <label class="contact-modal-closer" for="contact-modal-close"></label>
+            <div class="contact-modal">
+              <label class="button close-button" for="contact-modal-close">×</label>
+              <form class="contact-form">
+                <div class="form-group">
+                  <label class="">From</label>
+                  <div class="">
+                    <input class="form-control" name="mail" placeholder="example@example.com" type="email" required />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="">Title</label>
+                  <div class="">
+                    <input class="form-control" name="title" placeholder="【作曲依頼／ご意見／お問い合わせ】概略" type="text" required />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="">Body</label>
+                  <div class="">
+                    <textarea class="form-control" name="body" placeholder="こちらのページをご覧頂き、誠にありがとうございます。&#13;&#10;&#13;&#10;お手数ですが、以下の項目をご記入ください。&#13;&#10;&#13;&#10;-*-*-*-&#13;&#10;&#13;&#10;お名前：&#13;&#10;&#13;&#10;ご連絡先：&#13;&#10;&#13;&#10;ご用件&#13;&#10;（出来るだけ具体的にご記入頂けると助かります。）&#13;&#10;&#13;&#10;&#13;&#10;-*-*-*&#13;&#10;&#13;&#10;ご連絡に時間を要する場合がございますが、ご了承ください。&#13;&#10;確認、検討の上お返事させて頂きます。&#13;&#10;よろしくお願いします。&#13;&#10;&#13;&#10;佐間野絢佳"required></textarea>
+                  </div>
+                </div>
+                <div class="">
+                  <input class="contact-reset" type="reset" />
+                  <input class="contact-submit" type="submit" value="Submit"/>
+                </div>
+              </form>
             </div>
             <div class="footer">
               <div class="copyright">
