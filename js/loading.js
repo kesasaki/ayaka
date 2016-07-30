@@ -33,6 +33,21 @@ function stopload(){
                 box.css('display', 'inline');
                 box.css('opacity', 1);
             }
+
+            if (ScrollPos < 100) {
+                $('.movie-wrap').each(function(){
+                    li = $(this).closest('li');
+                    li.removeClass('effect').removeClass(li.attr('data-in-class')).removeClass(li.attr('data-out-class'));
+                });
+            } else {
+                $('.movie-wrap').each(function(){
+                    li = $(this).closest('li');
+                    if (!$(this).hasClass('full') && !li.hasClass('effect')) {
+                        li.addClass('effect');
+                        effect(li);
+                    }
+                });
+            }
         });
         $(window).trigger('scroll');
     });
