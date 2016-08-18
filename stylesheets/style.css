@@ -6478,17 +6478,18 @@ body .main .contact .contact-button:hover {
 }
 /* line 676, ../sass/style.scss */
 body .main .contact .footer {
-  padding-top: 30px;
-  height: 100px;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
   text-align: center;
 }
 @media screen and (max-width: 414px) {
-  /* line 680, ../sass/style.scss */
+  /* line 681, ../sass/style.scss */
   body .main .contact .footer .copyright {
     font-size: 12px;
   }
 }
-/* line 687, ../sass/style.scss */
+/* line 688, ../sass/style.scss */
 body .main .box {
   width: 100vw;
   height: 100vh;
@@ -6497,12 +6498,12 @@ body .main .box {
   justify-content: center;
   flex-direction: column;
 }
-/* line 695, ../sass/style.scss */
+/* line 696, ../sass/style.scss */
 body .main .sector-title {
   font-size: 48px;
   font-family: "Sorts Mill Goudy", serif;
 }
-/* line 699, ../sass/style.scss */
+/* line 700, ../sass/style.scss */
 body .main .without-box {
   padding-top: 70px;
 }

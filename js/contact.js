@@ -18,8 +18,7 @@
             submitHandler: function (e) {
                 var btn_submit, form;
                 form = $(e);
-                btn_submit = form.find('button[type=submit]');
-                return true;
+                btn_submit = form.find('input[type=submit]');
                 return $.ajax({
                     url: "https://script.google.com/macros/s/AKfycbyCvla1iuYy1RFTqxNYfZbYZqPxWmyaZY3UM3dIUdy3qBffzSwI/exec",
                     dataType: 'jsonp',

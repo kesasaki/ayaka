@@ -674,8 +674,9 @@ body {
                 }
             }
             .footer {
-                padding-top: 30px;
-                height: 100px;
+                position: absolute;
+                bottom: 50px;
+                width: 100%;
                 text-align: center;
                 .copyright {
                     @include mobile {
