@@ -248,6 +248,36 @@ body {
                     width: 100%;
                     border-top:    1px solid $border_color;
                 }
+                input {
+                    display: none;
+                }
+                label {
+                    cursor :pointer;
+                }
+                .detail {
+                    div {
+                        font-family: $contact_font_family;
+                        margin-top: 15px;
+                        margin-left: 170px;
+                        color: gray;
+                        @include mobile {
+                            margin-left: 110px;
+                            font-size: $font_size_small;
+                        }
+                        display: none;
+                        overflow-y: hidden;
+                        -webkit-transition: all 0.5s;
+                          -moz-transition: all 0.5s;
+                          -ms-transition: all 0.5s;
+                          -o-transition: all 0.5s;
+                          transition: all 0.5s;
+                    }
+                }
+                #news01:checked ~ #news-detail01 div,
+                #news02:checked ~ #news-detail02 div {
+                    display: block;
+                    opacity: 1;
+                }
             }
             dl {
                 text-align: left;
@@ -276,6 +306,10 @@ body {
                     .news-body {
                         margin-left: 10px;
                         color: gray;
+                        .read-more {
+                            color: #4682b4;
+                            font-size: $font_size_small - 1;
+                        }
                     }
                 }
             }
