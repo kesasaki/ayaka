@@ -12,11 +12,7 @@
     <link href="./image/favicon.ico" rel="shortcut icon">
     <script src="./js/jquery.min.js"></script>
     <script src="./js/jquery.validate.min.js"></script>
-    <script src="./js/loading.js"></script>
-    <script src="./js/menu.js"></script>
-    <script src="./js/contact.js"></script>
-    <script src="./js/animation.js"></script>
-    <script src="./js/youtube.js"></script>
+    <script src="./js/main.min.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -25,11 +21,15 @@
 
       ga('create', 'UA-80926416-1', 'auto');
       ga('send', 'pageview');
-
     </script>
-
   </head>
   <body>
+    <div id="loader-bg">
+      <div id="loader">
+        <img src="image/load.gif" width="80" height="80" alt="Now Loading..." />
+        <p>Now Loading...</p>
+      </div>
+    </div>
     <div class="main">
       <div class="box top">
         <div id="title-name" class="none fadeInDown">
@@ -66,11 +66,18 @@ What's New ↓↓
 この階層にニュースを追加してください
 以下の形式です
 
-                  <dt>201X.X.X</dt>
-                  <dd class="category">カテゴリ名（PV / RELEASE / LIVE / OFFER）</dd>
-                  <dd>詳細</dd>
+                  <li class="effect" data-in-class="fadeInLeft", data-out-class="fadeOutRight">
+                    <dl>
+                      <dt>20XX.XX.XX </dt>
+                      <dd>
+                        <div class="category">カテゴリ名（PV / RELEASE / LIVE / OFFER）</div>
+                        <div class="news-body">
+                          詳細
+                        </div>
+                      </dd>
+                    </dl>
+                  </li>
 注意事項
-・一番初めのdtには class="first" と入れてください
 ・詳細で改行を行いたい場合は<br>を入れてください
 ・上から新しい順で入れてください
 ・ニュース数に上限はありませんが、基本的には上に1つ追加したら一番下のニュースを消してください
@@ -79,27 +86,29 @@ What's New ↓↓
                   <li class="effect" data-in-class="fadeInLeft", data-out-class="fadeOutRight">
                     <dl>
                       <label for="news01">
-                      <dt class="first">2016.9.11 </dt>
-                        <dd>
-                          <div class="category">LIVE</div>
-                          <div class="news-body">
-                            佐間野絢佳 1st MiniAlbum レコ発ライブ<br>
-                            『S/-ity ～私は都会が嫌いです～』<span class="read-more">read more...</span>
-                          </div>
-                        </dd>
-                      </label>
-                      <input type="checkbox" id="news01" class="accordion" />
-                      <div class="detail" id="news-detail01">
-                        <div>
-                          9.11(Sun)<br>
-                          上前津スナフキンベース<br>
-                          OPEN17:30-/Start18:00-<br>
-                          TICKET:&yen;1,000 (＋D代&yen;500)<br>
-                          <br>
-                          ご予約は下記Contactからどうぞ。<br>
-                          定員に達し次第予約締め切りとさせて頂きます、ご了承ください。
+                      <dt class="first">2016.11.18 </dt>
+                      <dd>
+                        <div class="category">EVENT</div>
+                        <div class="news-body">
+                          Internet Music EVENT「APOLLO No.5」<br>
+                          1st Album通販開始<br>
+                        詳細は後日お知らせします。<br>
                         </div>
-                      </div>
+                      </dd>
+                    </dl>
+                  </li>
+                  <li class="effect" data-in-class="fadeInLeft", data-out-class="fadeOutRight">
+                    <dl>
+                      <label for="news01">
+                      <dt>2016.9.11 </dt>
+                      <dd>
+                        <div class="category">LIVE</div>
+                        <div class="news-body">
+                          佐間野絢佳 1st MiniAlbum レコ発ライブ<br>
+                          『S/-ity ～私は都会が嫌いです～』<br>
+                        上前津スナフキンベース<br>
+                        </div>
+                      </dd>
                     </dl>
                   </li>
                   <li class="effect" data-in-class="fadeInLeft", data-out-class="fadeOutRight">
@@ -131,7 +140,7 @@ What's New ↓↓
                         <div class="category">LIVE</div>
                         <div class="news-body">
                           「THE ANISON M@STER 12th」<br>
-                          栄 TITE ROPE<br>16:30open 17:00start</div>
+                       </div>
                       </dd>
                     </dl>
                   </li>
@@ -143,37 +152,13 @@ What's New ↓↓
                         <div class="news-body">
                           「Live Size vol.3」<br>
                           上前津スナフキンベース<br>
-                          18:00 Start
-                        </div>
-                      </dd>
-                    </dl>
-                  </li>
-                  <li class="effect" data-in-class="fadeInLeft", data-out-class="fadeOutRight">
-                    <dl>
-                      <dt>2015.6.13-14</dt>
-                      <dd>
-                        <div class="category">OFFER</div>
-                        <div class="news-body">
-                          劇団粋んぐH"igh 第4回公演「馬鹿莫迦ばか」<br>
-                          ED『stage』
-                        </div>
-                      </dd>
-                    </dl>
-                  </li>
-                  <li class="effect" data-in-class="fadeInLeft", data-out-class="fadeOutRight">
-                    <dl>
-                      <dt>2015.6.10-14</dt>
-                      <dd>
-                        <div class="category">OFFER</div>
-                        <div class="news-body">
-                          虹創旅団 2015年夏公演「WonderLast」<br>
-                          劇中曲『32bitの涙、そして新しい世界』
                         </div>
                       </dd>
                     </dl>
                   </li>
                 </ul>
               </div>
+                 
 <!--
 
 What's New ↑↑
@@ -204,6 +189,23 @@ What's New ↑↑
                     <div class="description-year">2008年</div>
                     <div class="description-body">17歳本格的にDTMでの作曲を開始</div>
                   </div>
+                  <div class="description-detail">
+                    <div class="description-year">2013年~</div>
+                    <div class="description-body">劇団「虹創旅団」(現TremendousCircus)<br>劇中BGM・主題歌を提供<br>
+                    劇中歌<br>
+                    「TOP STAR・お星様の恋」「サラ」「銀河鉄道の夜」<br>「ワンダーラスト」「My treasure!～聖ブレンダヌスの羅針図～」<br>
+                    主題歌<br>
+                     「雪白姫」…乙女の儘に、降り積もる雪
+                    </div>
+                  </div>
+                  <div class="description-detail">
+                    <div class="description-year">2015年6月</div>
+                    <div class="description-body">劇団「粋んぐH”igh」第4回公演「馬鹿莫迦ばか」<br>ED『Stage.』提供</div>
+                  </div>
+                  <div class="description-detail">
+                    <div class="description-year">2016年9月</div>
+                    <div class="description-body">CDレコ発ライブ『S/-ity ～私は都会が嫌いです～』<br>TICKET sold out</div>
+                  </div>
                 </div>
               </div>
 <!--
@@ -221,14 +223,28 @@ Works ↓↓
 
 
 CD（画像）の場合
-                  <li>
+                  <li class="effect" data-in-class="fadeInLeft", data-out-class="fadeOutRight">
                     <dl>
-                      <dt>music</dt>
-                      <dd class="contents">
-                        <img src="./image/画像名">
+                      <dt class="music">music</dt>
+                      <dd class="contents music slideshow">
+                        <img src="./image/glowing.jpg" class="active">
+                        <img src="./image/yakou.png">
+                        <img src="./image/999.png">
                       </dd>
                       <dd class="description music">
-                          詳細
+                        <div class="description-wrapper">
+                          <div class="description-date">Release 2016.09.11</div>
+                          <div class="description-title">「S/-ity」</div>
+                          <div class="description-body">
+                            01 P.S.<br>
+                            02 Sleep<br>
+                            03 raIn/Street<br>
+                            04 kis:S<br>
+                            05 Stage.<br>
+                            <br>
+                            &yen;1,000
+                          </div>
+                        </div>
                       </dd>
                     </dl>
                   </li>
@@ -238,30 +254,37 @@ CDの場合の注意事項
 ・画像は100px x 100px より大きい正方形にしてください
 ・画像は1MB以下の大きさにしてください
 ・詳細では<br>で改行できます
+・画像はスライドショーで順番に次の画像が表示されます
+・最初に表示しておきたい画像には class="active" をつけてください
 
 
 
 Video(Youtube)の場合
 
-                  <li>
+                  <li class="effect" data-in-class="fadeInLeft", data-out-class="fadeOutRight">
                     <dl>
-                      <dt>video</dt>
+                      <dt class="video">video</dt>
                       <dd class="contents">
-                        <iframe src="https://www.youtube.com/embed/{埋め込みコードの動画ID}?modestbranding=1&rel=0&showinfo=0&theme=light&autohide=1" width="100%" frameborder="0" allowfullscreen></iframe>
+                        <div class="movie-wrap" data-movie-src="p5yvLN2agSE">
+                          <button class="close-button">×</button>
+                        </div>
                       </dd>
-                      <dd class="description">動画タイトル<br>
-                        <span class="pc-only">
-                          pcで出す文章
-                        </span>
+                      <dd class="description">
+                        <div class="description-wrapper">
+                          <div class="description-title">Stage.</div>
+                          <div class="pc-only description-body">
+                            劇団粋んぐH"igh 第4回公演「馬鹿莫迦ばか」主題歌<br>
+                            アルバム『S/-ity』 収録曲<br>
+                          </div>
+                        </div>
                       </dd>
                     </dl>
                   </li>
 
 Videoの場合の注意事項
 ・あらかじめYoutubeに動画をアップロードしてください
-・アップロードした動画のIDを{埋め込みコードの動画ID}に入れてください
+・アップロードした動画のIDをdata-move-src="{埋め込みコードの動画ID}"に入れてください
 ・「pcで出す文章」ではpc表示で生まれる空白に文字を出せます。30文字以下で改行<br>を入れてください
-・6行以上ではレイアウトが崩れる可能性があります
 
 Youtube動画IDとは
 　https://www.youtube.com/watch?v=oEGLL0_xxjc&feature=youtu.be
@@ -271,16 +294,19 @@ Youtube動画IDとは
 
 Sound(soundcloud)の場合
 
-                  <li>
+                  <li class="effect" data-in-class="fadeInLeft", data-out-class="fadeOutRight">
                     <dl>
-                      <dt>sound</dt>
+                      <dt class="sound">sound</dt>
                       <dd class="contents">
-                        <iframe width="100%" height="100px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{トラックの埋め込みID}&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false"></iframe>
+                        <iframe scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/259912700&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false"></iframe>
                       </dd>
-                      <dd class="description">楽曲タイトル<br>
-                        <span class="pc-only">
-                          pcで出す文章
-                        </span>
+                      <dd class="description">
+                        <div class="description-wrapper">
+                          <div class="description-title">P.S...在りし日の私へ</div>
+                          <div class="pc-only description-body">
+                            公演「Re:S」挿入予定BGM<br>
+                          </div>
+                        </div>
                       </dd>
                     </dl>
                   </li>
@@ -325,7 +351,7 @@ Soundの場合の注意事項
                             04 kis:S<br>
                             05 Stage.<br>
                             <br>
-                            &yen;500
+                            &yen;1,000
                           </div>
                         </div>
                       </dd>
@@ -443,12 +469,6 @@ Works ↑↑
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div id="loader-bg">
-      <div id="loader">
-        <img src="image/load.gif" width="80" height="80" alt="Now Loading..." />
-        <p>Now Loading...</p>
       </div>
     </div>
     <div id="alert-message" class="none">
